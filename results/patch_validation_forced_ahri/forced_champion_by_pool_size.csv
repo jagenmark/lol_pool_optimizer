@@ -1,0 +1,33 @@
+patch,pool_size,forced_champions,model_name,selected_pool,score
+16.05,1,Ahri,optimized_model_forced,Ahri,0.5163188615418591
+16.05,1,Ahri,baseline_winrate_forced,Ahri,0.5163188615418591
+16.05,1,Ahri,baseline_blindscore_forced,Ahri,0.5163188615418591
+16.05,1,Ahri,baseline_pickrate_forced,Ahri,0.5163188615418591
+16.05,2,Ahri,optimized_model_forced,"Ahri, Vel'Koz",0.5264513160059442
+16.05,2,Ahri,baseline_winrate_forced,"Ahri, Xerath",0.5253354394024176
+16.05,2,Ahri,baseline_blindscore_forced,"Ahri, Anivia",0.5256194449231669
+16.05,2,Ahri,baseline_pickrate_forced,"Ahri, Yasuo",0.5184454643147258
+16.05,3,Ahri,optimized_model_forced,"Ahri, Vel'Koz, Vex",0.5356563510496489
+16.05,3,Ahri,baseline_winrate_forced,"Ahri, Xerath, Veigar",0.5308184019112393
+16.05,3,Ahri,baseline_blindscore_forced,"Ahri, Anivia, Xerath",0.5321707231120756
+16.05,3,Ahri,baseline_pickrate_forced,"Ahri, Yasuo, Malzahar",0.5261444886254327
+16.05,4,Ahri,optimized_model_forced,"Ahri, Vel'Koz, Vex, Xerath",0.5407146739386846
+16.05,4,Ahri,baseline_winrate_forced,"Ahri, Xerath, Veigar, Brand",0.5354919024120033
+16.05,4,Ahri,baseline_blindscore_forced,"Ahri, Anivia, Xerath, Veigar",0.5360567207374494
+16.05,4,Ahri,baseline_pickrate_forced,"Ahri, Yasuo, Malzahar, Viktor",0.5271262480293951
+16.05,5,Ahri,optimized_model_forced,"Ahri, Brand, Vel'Koz, Vex, Xerath",0.5437245108658586
+16.05,5,Ahri,baseline_winrate_forced,"Ahri, Xerath, Veigar, Brand, Anivia",0.5391650634150372
+16.05,5,Ahri,baseline_blindscore_forced,"Ahri, Anivia, Xerath, Veigar, Annie",0.5378734932160345
+16.05,5,Ahri,baseline_pickrate_forced,"Ahri, Yasuo, Malzahar, Viktor, Zed",0.5291861107097992
+16.05,6,Ahri,optimized_model_forced,"Ahri, Vel'Koz, Vex, Xerath, Brand, Naafiri",0.5456220881066035
+16.05,6,Ahri,baseline_winrate_forced,"Ahri, Xerath, Veigar, Brand, Anivia, Vex",0.5436262466848981
+16.05,6,Ahri,baseline_blindscore_forced,"Ahri, Anivia, Xerath, Veigar, Annie, Aurelion Sol",0.5393487565235608
+16.05,6,Ahri,baseline_pickrate_forced,"Ahri, Yasuo, Malzahar, Viktor, Zed, Akali",0.5296544275877108
+16.05,7,Ahri,optimized_model_forced,"Ahri, Vel'Koz, Vex, Xerath, Brand, Naafiri, Veigar",0.5472285698291438
+16.05,7,Ahri,baseline_winrate_forced,"Ahri, Xerath, Veigar, Brand, Anivia, Vex, Aurelion Sol",0.5453051482748025
+16.05,7,Ahri,baseline_blindscore_forced,"Ahri, Anivia, Xerath, Veigar, Annie, Aurelion Sol, Vel'Koz",0.5429440488526673
+16.05,7,Ahri,baseline_pickrate_forced,"Ahri, Yasuo, Malzahar, Viktor, Zed, Akali, Katarina",0.5315893054792655
+16.05,8,Ahri,optimized_model_forced,"Ahri, Vel'Koz, Vex, Xerath, Brand, Naafiri, Veigar, Malzahar",0.5484021132071413
+16.05,8,Ahri,baseline_winrate_forced,"Ahri, Xerath, Veigar, Brand, Anivia, Vex, Aurelion Sol, Annie",0.5453460506376705
+16.05,8,Ahri,baseline_blindscore_forced,"Ahri, Anivia, Xerath, Veigar, Annie, Aurelion Sol, Vel'Koz, Brand",0.5447643209837612
+16.05,8,Ahri,baseline_pickrate_forced,"Ahri, Yasuo, Malzahar, Viktor, Zed, Akali, Katarina, Sylas",0.5316854609510385

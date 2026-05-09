@@ -1,0 +1,5 @@
+patch,pool_size,forced_champions,model_name,selected_pool,score
+16.07,3,Ahri,optimized_model_forced,"Ahri, Sion, Vel'Koz",0.54550891860093
+16.07,3,Ahri,baseline_winrate_forced,"Ahri, Sion, Annie",0.5427596597168921
+16.07,3,Ahri,baseline_blindscore_forced,"Ahri, Sion, Anivia",0.5421807865981969
+16.07,3,Ahri,baseline_pickrate_forced,"Ahri, Yasuo, Malzahar",0.5228905615190725

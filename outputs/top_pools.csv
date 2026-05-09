@@ -1,0 +1,181 @@
+train_patch,eval_patch,model,parameter,pool_size,rank,pool_ids,pool_names,training_score_a,evaluation_score_b
+16.05,16.06,raw,none,2,1,nasus|sion,"Nasus, Sion",0.5400684016032363,0.5351324439768573
+16.05,16.06,raw,none,2,2,sion|xerath,"Sion, Xerath",0.5400152951547401,0.5370566243546278
+16.05,16.06,raw,none,2,3,nasus|velkoz,"Nasus, Vel'Koz",0.5398258388364311,0.5306205409103879
+16.05,16.06,raw,none,2,4,morgana|nasus,"Morgana, Nasus",0.5397500780287212,0.5299769444314878
+16.05,16.06,raw,none,2,5,nasus|veigar,"Nasus, Veigar",0.5385033952765499,0.5318438884752826
+16.05,16.06,raw,none,2,6,kogmaw|nasus,"Kog'Maw, Nasus",0.5384909673471195,0.5344503088822269
+16.05,16.06,raw,none,2,7,nasus|vex,"Nasus, Vex",0.5380472140560445,0.5321761800706452
+16.05,16.06,raw,none,2,8,nasus|xerath,"Nasus, Xerath",0.5378218494196992,0.5314747061257301
+16.05,16.06,raw,none,2,9,brand|nasus,"Brand, Nasus",0.5376079188265112,0.5307428973595084
+16.05,16.06,raw,none,2,10,morgana|sion,"Morgana, Sion",0.5374646250032908,0.5366541670023646
+16.05,16.06,raw,none,3,1,morgana|nasus|sion,"Morgana, Nasus, Sion",0.5497105597229103,0.5440079226413279
+16.05,16.06,raw,none,3,2,nasus|sion|vex,"Nasus, Sion, Vex",0.5496132266985917,0.5434239703723853
+16.05,16.06,raw,none,3,3,nasus|sion|xerath,"Nasus, Sion, Xerath",0.5491577303544889,0.5450715849250453
+16.05,16.06,raw,none,3,4,nasus|sion|veigar,"Nasus, Sion, Veigar",0.5490257620993726,0.5440583570694293
+16.05,16.06,raw,none,3,5,nasus|sion|velkoz,"Nasus, Sion, Vel'Koz",0.5486580038425118,0.5436389474500408
+16.05,16.06,raw,none,3,6,kogmaw|nasus|sion,"Kog'Maw, Nasus, Sion",0.5485955580585107,0.5471385384642878
+16.05,16.06,raw,none,3,7,annie|nasus|sion,"Annie, Nasus, Sion",0.5475041828954846,0.5445327017775117
+16.05,16.06,raw,none,3,8,kogmaw|morgana|nasus,"Kog'Maw, Morgana, Nasus",0.5473172154756432,0.5379104821264473
+16.05,16.06,raw,none,3,9,naafiri|nasus|sion,"Naafiri, Nasus, Sion",0.5472897634141621,0.5436136093091133
+16.05,16.06,raw,none,3,10,brand|nasus|vex,"Brand, Nasus, Vex",0.5472402595725114,0.5368546610079654
+16.05,16.06,raw,none,4,1,kogmaw|morgana|nasus|sion,"Kog'Maw, Morgana, Nasus, Sion",0.5552946812287477,0.5495429095203452
+16.05,16.06,raw,none,4,2,kogmaw|nasus|sion|vex,"Kog'Maw, Nasus, Sion, Vex",0.5549982685078642,0.5507511060152376
+16.05,16.06,raw,none,4,3,morgana|nasus|pantheon|sion,"Morgana, Nasus, Pantheon, Sion",0.5546310048716594,0.5492345550405837
+16.05,16.06,raw,none,4,4,morgana|nasus|sion|xerath,"Morgana, Nasus, Sion, Xerath",0.5544777148348555,0.5486336705706539
+16.05,16.06,raw,none,4,5,kogmaw|nasus|sion|veigar,"Kog'Maw, Nasus, Sion, Veigar",0.5544448730959972,0.5491760225098151
+16.05,16.06,raw,none,4,6,morgana|nasus|sion|vex,"Morgana, Nasus, Sion, Vex",0.5543731703968653,0.548694665572444
+16.05,16.06,raw,none,4,7,nasus|sion|vex|xerath,"Nasus, Sion, Vex, Xerath",0.554307963062879,0.5498983597863086
+16.05,16.06,raw,none,4,8,morgana|nasus|sion|velkoz,"Morgana, Nasus, Sion, Vel'Koz",0.5542933888526815,0.5489321738487793
+16.05,16.06,raw,none,4,9,brand|nasus|sion|vex,"Brand, Nasus, Sion, Vex",0.5540219709835998,0.5464615413459368
+16.05,16.06,raw,none,4,10,kogmaw|nasus|sion|velkoz,"Kog'Maw, Nasus, Sion, Vel'Koz",0.5539116437845567,0.5491850689760244
+16.05,16.06,shrink_overall,50,2,1,sion|xerath,"Sion, Xerath",0.5387839516529132,0.5370566243546278
+16.05,16.06,shrink_overall,50,2,2,nasus|sion,"Nasus, Sion",0.5385105901917523,0.5351324439768573
+16.05,16.06,shrink_overall,50,2,3,morgana|nasus,"Morgana, Nasus",0.5373743391849559,0.5299769444314878
+16.05,16.06,shrink_overall,50,2,4,nasus|vex,"Nasus, Vex",0.537266005550229,0.5321761800706452
+16.05,16.06,shrink_overall,50,2,5,nasus|velkoz,"Nasus, Vel'Koz",0.5372210396852665,0.5306205409103879
+16.05,16.06,shrink_overall,50,2,6,nasus|veigar,"Nasus, Veigar",0.5366355691156858,0.5318438884752826
+16.05,16.06,shrink_overall,50,2,7,nasus|xerath,"Nasus, Xerath",0.5363835837150768,0.5314747061257301
+16.05,16.06,shrink_overall,50,2,8,sion|veigar,"Sion, Veigar",0.5361052715908459,0.5359753936446227
+16.05,16.06,shrink_overall,50,2,9,sion|vex,"Sion, Vex",0.5359332586262867,0.5357223973991863
+16.05,16.06,shrink_overall,50,2,10,morgana|sion,"Morgana, Sion",0.5355481259069718,0.5366541670023646
+16.05,16.06,shrink_overall,50,3,1,nasus|sion|vex,"Nasus, Sion, Vex",0.5471853255583383,0.5434239703723853
+16.05,16.06,shrink_overall,50,3,2,nasus|sion|xerath,"Nasus, Sion, Xerath",0.5464393229131614,0.5450715849250453
+16.05,16.06,shrink_overall,50,3,3,nasus|sion|veigar,"Nasus, Sion, Veigar",0.5461153065663704,0.5440583570694293
+16.05,16.06,shrink_overall,50,3,4,morgana|nasus|sion,"Morgana, Nasus, Sion",0.5459855751189072,0.5440079226413279
+16.05,16.06,shrink_overall,50,3,5,nasus|sion|velkoz,"Nasus, Sion, Vel'Koz",0.5451707061710743,0.5436389474500408
+16.05,16.06,shrink_overall,50,3,6,annie|nasus|sion,"Annie, Nasus, Sion",0.5447206472672282,0.5445327017775117
+16.05,16.06,shrink_overall,50,3,7,sion|vex|xerath,"Sion, Vex, Xerath",0.5445633468602872,0.5429036180836946
+16.05,16.06,shrink_overall,50,3,8,aurelionsol|nasus|vex,"Aurelion Sol, Nasus, Vex",0.5444641584359933,0.5402423733228495
+16.05,16.06,shrink_overall,50,3,9,naafiri|nasus|sion,"Naafiri, Nasus, Sion",0.544459785720628,0.5436136093091133
+16.05,16.06,shrink_overall,50,3,10,brand|nasus|vex,"Brand, Nasus, Vex",0.5444560937231286,0.5368546610079654
+16.05,16.06,shrink_overall,50,4,1,nasus|sion|vex|xerath,"Nasus, Sion, Vex, Xerath",0.5515144089086568,0.5498983597863086
+16.05,16.06,shrink_overall,50,4,2,aurelionsol|nasus|sion|vex,"Aurelion Sol, Nasus, Sion, Vex",0.5507572144518396,0.5488944952904397
+16.05,16.06,shrink_overall,50,4,3,morgana|nasus|sion|vex,"Morgana, Nasus, Sion, Vex",0.5507470935244071,0.548694665572444
+16.05,16.06,shrink_overall,50,4,4,brand|nasus|sion|vex,"Brand, Nasus, Sion, Vex",0.5506945154735056,0.5464615413459368
+16.05,16.06,shrink_overall,50,4,5,morgana|nasus|sion|xerath,"Morgana, Nasus, Sion, Xerath",0.5505645697030543,0.5486336705706539
+16.05,16.06,shrink_overall,50,4,6,kogmaw|nasus|sion|vex,"Kog'Maw, Nasus, Sion, Vex",0.5505387083376488,0.5507511060152376
+16.05,16.06,shrink_overall,50,4,7,morgana|nasus|pantheon|sion,"Morgana, Nasus, Pantheon, Sion",0.5501813844181679,0.5492345550405837
+16.05,16.06,shrink_overall,50,4,8,nasus|sion|swain|vex,"Nasus, Sion, Swain, Vex",0.5500302757840796,0.549487235922052
+16.05,16.06,shrink_overall,50,4,9,nasus|sion|veigar|vex,"Nasus, Sion, Veigar, Vex",0.5499160472366692,0.547418879949067
+16.05,16.06,shrink_overall,50,4,10,nasus|sion|velkoz|vex,"Nasus, Sion, Vel'Koz, Vex",0.5498605083728306,0.5488849637385957
+16.05,16.06,shrink_overall,100,2,1,sion|xerath,"Sion, Xerath",0.5379319501511072,0.5370566243546278
+16.05,16.06,shrink_overall,100,2,2,nasus|sion,"Nasus, Sion",0.5374144608617386,0.5351324439768573
+16.05,16.06,shrink_overall,100,2,3,nasus|vex,"Nasus, Vex",0.5366723141814173,0.5321761800706452
+16.05,16.06,shrink_overall,100,2,4,morgana|nasus,"Morgana, Nasus",0.5357004815679897,0.5299769444314878
+16.05,16.06,shrink_overall,100,2,5,sion|vex,"Sion, Vex",0.5356095479504515,0.5357223973991863
+16.05,16.06,shrink_overall,100,2,6,sion|veigar,"Sion, Veigar",0.535530897554586,0.5359753936446227
+16.05,16.06,shrink_overall,100,2,7,nasus|xerath,"Nasus, Xerath",0.535487621966754,0.5314747061257301
+16.05,16.06,shrink_overall,100,2,8,nasus|veigar,"Nasus, Veigar",0.5354641420316794,0.5318438884752826
+16.05,16.06,shrink_overall,100,2,9,nasus|velkoz,"Nasus, Vel'Koz",0.5354129990952233,0.5306205409103879
+16.05,16.06,shrink_overall,100,2,10,annie|nasus,"Annie, Nasus",0.5346091307734225,0.5312170044542285
+16.05,16.06,shrink_overall,100,3,1,nasus|sion|vex,"Nasus, Sion, Vex",0.5455605876898479,0.5434239703723853
+16.05,16.06,shrink_overall,100,3,2,nasus|sion|xerath,"Nasus, Sion, Xerath",0.5446147052632748,0.5450715849250453
+16.05,16.06,shrink_overall,100,3,3,nasus|sion|veigar,"Nasus, Sion, Veigar",0.5442181848317288,0.5440583570694293
+16.05,16.06,shrink_overall,100,3,4,sion|vex|xerath,"Sion, Vex, Xerath",0.5436256126988438,0.5429036180836946
+16.05,16.06,shrink_overall,100,3,5,morgana|nasus|sion,"Morgana, Nasus, Sion",0.5434973217352317,0.5440079226413279
+16.05,16.06,shrink_overall,100,3,6,aurelionsol|nasus|vex,"Aurelion Sol, Nasus, Vex",0.542990227969871,0.5402423733228495
+16.05,16.06,shrink_overall,100,3,7,annie|nasus|sion,"Annie, Nasus, Sion",0.5429553989764908,0.5445327017775117
+16.05,16.06,shrink_overall,100,3,8,nasus|vex|xerath,"Nasus, Vex, Xerath",0.5429371912257741,0.5403773922925436
+16.05,16.06,shrink_overall,100,3,9,nasus|sion|velkoz,"Nasus, Sion, Vel'Koz",0.5428430409232926,0.5436389474500408
+16.05,16.06,shrink_overall,100,3,10,naafiri|nasus|sion,"Naafiri, Nasus, Sion",0.5426349649887572,0.5436136093091133
+16.05,16.06,shrink_overall,100,4,1,nasus|sion|vex|xerath,"Nasus, Sion, Vex, Xerath",0.5496216099856608,0.5498983597863086
+16.05,16.06,shrink_overall,100,4,2,aurelionsol|nasus|sion|vex,"Aurelion Sol, Nasus, Sion, Vex",0.5488293845795841,0.5488944952904397
+16.05,16.06,shrink_overall,100,4,3,brand|nasus|sion|vex,"Brand, Nasus, Sion, Vex",0.5484140288700646,0.5464615413459368
+16.05,16.06,shrink_overall,100,4,4,morgana|nasus|sion|vex,"Morgana, Nasus, Sion, Vex",0.5482984427251806,0.548694665572444
+16.05,16.06,shrink_overall,100,4,5,morgana|nasus|sion|xerath,"Morgana, Nasus, Sion, Xerath",0.548004414900337,0.5486336705706539
+16.05,16.06,shrink_overall,100,4,6,nasus|sion|veigar|xerath,"Nasus, Sion, Veigar, Xerath",0.5478959868872506,0.548167930161965
+16.05,16.06,shrink_overall,100,4,7,nasus|sion|veigar|vex,"Nasus, Sion, Veigar, Vex",0.5478896778858928,0.547418879949067
+16.05,16.06,shrink_overall,100,4,8,nasus|sion|swain|vex,"Nasus, Sion, Swain, Vex",0.5478704302584279,0.549487235922052
+16.05,16.06,shrink_overall,100,4,9,naafiri|nasus|sion|vex,"Naafiri, Nasus, Sion, Vex",0.5478010858883686,0.5478757485956735
+16.05,16.06,shrink_overall,100,4,10,ahri|nasus|sion|vex,"Ahri, Nasus, Sion, Vex",0.5476671662088751,0.5462880091422839
+16.05,16.06,shrink_overall,250,2,1,sion|xerath,"Sion, Xerath",0.5363512405798999,0.5370566243546278
+16.05,16.06,shrink_overall,250,2,2,nasus|sion,"Nasus, Sion",0.5352826842003208,0.5351324439768573
+16.05,16.06,shrink_overall,250,2,3,nasus|vex,"Nasus, Vex",0.5351140051984828,0.5321761800706452
+16.05,16.06,shrink_overall,250,2,4,sion|vex,"Sion, Vex",0.5349310715629721,0.5357223973991863
+16.05,16.06,shrink_overall,250,2,5,sion|veigar,"Sion, Veigar",0.5343810640357233,0.5359753936446227
+16.05,16.06,shrink_overall,250,2,6,nasus|xerath,"Nasus, Xerath",0.5337957876548877,0.5314747061257301
+16.05,16.06,shrink_overall,250,2,7,nasus|veigar,"Nasus, Veigar",0.5335281414194614,0.5318438884752826
+16.05,16.06,shrink_overall,250,2,8,annie|sion,"Annie, Sion",0.5331418672380602,0.537263692299631
+16.05,16.06,shrink_overall,250,2,9,morgana|nasus,"Morgana, Nasus",0.5327171206179938,0.5299769444314878
+16.05,16.06,shrink_overall,250,2,10,annie|nasus,"Annie, Nasus",0.5326738812909355,0.5312170044542285
+16.05,16.06,shrink_overall,250,3,1,nasus|sion|vex,"Nasus, Sion, Vex",0.5422736413844647,0.5434239703723853
+16.05,16.06,shrink_overall,250,3,2,sion|vex|xerath,"Sion, Vex, Xerath",0.5417629058686434,0.5429036180836946
+16.05,16.06,shrink_overall,250,3,3,nasus|sion|xerath,"Nasus, Sion, Xerath",0.5412825798559263,0.5450715849250453
+16.05,16.06,shrink_overall,250,3,4,nasus|sion|veigar,"Nasus, Sion, Veigar",0.5407504177147308,0.5440583570694293
+16.05,16.06,shrink_overall,250,3,5,nasus|vex|xerath,"Nasus, Vex, Xerath",0.5405040009979849,0.5403773922925436
+16.05,16.06,shrink_overall,250,3,6,aurelionsol|nasus|vex,"Aurelion Sol, Nasus, Vex",0.5400434915802473,0.5402423733228495
+16.05,16.06,shrink_overall,250,3,7,sion|veigar|xerath,"Sion, Veigar, Xerath",0.5395970354697841,0.5406473296892219
+16.05,16.06,shrink_overall,250,3,8,annie|nasus|sion,"Annie, Nasus, Sion",0.5395843966599838,0.5445327017775117
+16.05,16.06,shrink_overall,250,3,9,aurelionsol|sion|vex,"Aurelion Sol, Sion, Vex",0.5394300807784196,0.5421798238087076
+16.05,16.06,shrink_overall,250,3,10,annie|sion|xerath,"Annie, Sion, Xerath",0.5393837800204196,0.542051179646606
+16.05,16.06,shrink_overall,250,4,1,nasus|sion|vex|xerath,"Nasus, Sion, Vex, Xerath",0.5459911031161759,0.5498983597863086
+16.05,16.06,shrink_overall,250,4,2,aurelionsol|nasus|sion|vex,"Aurelion Sol, Nasus, Sion, Vex",0.5450727420967956,0.5488944952904397
+16.05,16.06,shrink_overall,250,4,3,nasus|sion|veigar|xerath,"Nasus, Sion, Veigar, Xerath",0.5443619619043986,0.548167930161965
+16.05,16.06,shrink_overall,250,4,4,nasus|sion|veigar|vex,"Nasus, Sion, Veigar, Vex",0.5440990600162338,0.547418879949067
+16.05,16.06,shrink_overall,250,4,5,brand|nasus|sion|vex,"Brand, Nasus, Sion, Vex",0.5440541075567256,0.5464615413459368
+16.05,16.06,shrink_overall,250,4,6,naafiri|nasus|sion|vex,"Naafiri, Nasus, Sion, Vex",0.5439469820597624,0.5478757485956735
+16.05,16.06,shrink_overall,250,4,7,ahri|nasus|sion|vex,"Ahri, Nasus, Sion, Vex",0.5438971167350198,0.5462880091422839
+16.05,16.06,shrink_overall,250,4,8,morgana|nasus|sion|vex,"Morgana, Nasus, Sion, Vex",0.5438580389191298,0.548694665572444
+16.05,16.06,shrink_overall,250,4,9,malzahar|nasus|sion|vex,"Malzahar, Nasus, Sion, Vex",0.5438422435973035,0.5448568878646662
+16.05,16.06,shrink_overall,250,4,10,fizz|nasus|sion|vex,"Fizz, Nasus, Sion, Vex",0.5437719746911578,0.5474012916989494
+16.05,16.06,shrink_overall,500,2,1,sion|xerath,"Sion, Xerath",0.5348426534424797,0.5370566243546278
+16.05,16.06,shrink_overall,500,2,2,sion|vex,"Sion, Vex",0.5341353050732439,0.5357223973991863
+16.05,16.06,shrink_overall,500,2,3,nasus|sion,"Nasus, Sion",0.5335398120838813,0.5351324439768573
+16.05,16.06,shrink_overall,500,2,4,nasus|vex,"Nasus, Vex",0.5334519227279209,0.5321761800706452
+16.05,16.06,shrink_overall,500,2,5,sion|veigar,"Sion, Veigar",0.5333401116846638,0.5359753936446227
+16.05,16.06,shrink_overall,500,2,6,nasus|veigar,"Nasus, Veigar",0.5323046131536183,0.5318438884752826
+16.05,16.06,shrink_overall,500,2,7,nasus|xerath,"Nasus, Xerath",0.5321373261807932,0.5314747061257301
+16.05,16.06,shrink_overall,500,2,8,annie|sion,"Annie, Sion",0.5320189866440005,0.537263692299631
+16.05,16.06,shrink_overall,500,2,9,ahri|sion,"Ahri, Sion",0.5318071383326715,0.5328993693174969
+16.05,16.06,shrink_overall,500,2,10,aurelionsol|sion,"Aurelion Sol, Sion",0.531272844449796,0.5352786570347187
+16.05,16.06,shrink_overall,500,3,1,sion|vex|xerath,"Sion, Vex, Xerath",0.5398071096500507,0.5429036180836946
+16.05,16.06,shrink_overall,500,3,2,nasus|sion|vex,"Nasus, Sion, Vex",0.5391566075818299,0.5434239703723853
+16.05,16.06,shrink_overall,500,3,3,nasus|sion|xerath,"Nasus, Sion, Xerath",0.5382816334507089,0.5450715849250453
+16.05,16.06,shrink_overall,500,3,4,nasus|vex|xerath,"Nasus, Vex, Xerath",0.5380788274580491,0.5403773922925436
+16.05,16.06,shrink_overall,500,3,5,nasus|sion|veigar,"Nasus, Sion, Veigar",0.5379778786428145,0.5440583570694293
+16.05,16.06,shrink_overall,500,3,6,sion|veigar|xerath,"Sion, Veigar, Xerath",0.5378499156705384,0.5406473296892219
+16.05,16.06,shrink_overall,500,3,7,aurelionsol|sion|vex,"Aurelion Sol, Sion, Vex",0.5375319710976025,0.5421798238087076
+16.05,16.06,shrink_overall,500,3,8,annie|sion|xerath,"Annie, Sion, Xerath",0.5375288115764246,0.542051179646606
+16.05,16.06,shrink_overall,500,3,9,aurelionsol|nasus|vex,"Aurelion Sol, Nasus, Vex",0.5372503904200336,0.5402423733228495
+16.05,16.06,shrink_overall,500,3,10,malzahar|sion|xerath,"Malzahar, Sion, Xerath",0.5371503061484216,0.5396179068246679
+16.05,16.06,shrink_overall,500,4,1,nasus|sion|vex|xerath,"Nasus, Sion, Vex, Xerath",0.5426068870549727,0.5498983597863086
+16.05,16.06,shrink_overall,500,4,2,aurelionsol|nasus|sion|vex,"Aurelion Sol, Nasus, Sion, Vex",0.5415652982660226,0.5488944952904397
+16.05,16.06,shrink_overall,500,4,3,sion|veigar|vex|xerath,"Sion, Veigar, Vex, Xerath",0.5413032355857188,0.5444707684831092
+16.05,16.06,shrink_overall,500,4,4,nasus|sion|veigar|xerath,"Nasus, Sion, Veigar, Xerath",0.5411436117088677,0.548167930161965
+16.05,16.06,shrink_overall,500,4,5,malzahar|sion|vex|xerath,"Malzahar, Sion, Vex, Xerath",0.5411310343145244,0.5441106379002553
+16.05,16.06,shrink_overall,500,4,6,nasus|sion|veigar|vex,"Nasus, Sion, Veigar, Vex",0.5409341450506284,0.547418879949067
+16.05,16.06,shrink_overall,500,4,7,aurelionsol|sion|vex|xerath,"Aurelion Sol, Sion, Vex, Xerath",0.5408884646773936,0.5456767152383313
+16.05,16.06,shrink_overall,500,4,8,mel|sion|vex|xerath,"Mel, Sion, Vex, Xerath",0.5406980178354307,0.5441564961736527
+16.05,16.06,shrink_overall,500,4,9,fizz|sion|vex|xerath,"Fizz, Sion, Vex, Xerath",0.5406180976512349,0.5454265220885021
+16.05,16.06,shrink_overall,500,4,10,naafiri|sion|vex|xerath,"Naafiri, Sion, Vex, Xerath",0.5406092700099286,0.5462919367291198
+16.05,16.06,shrink_overall,1000,2,1,sion|xerath,"Sion, Xerath",0.5332711809723618,0.5370566243546278
+16.05,16.06,shrink_overall,1000,2,2,sion|vex,"Sion, Vex",0.5330173256442859,0.5357223973991863
+16.05,16.06,shrink_overall,1000,2,3,sion|veigar,"Sion, Veigar",0.5322037624642809,0.5359753936446227
+16.05,16.06,shrink_overall,1000,2,4,nasus|sion,"Nasus, Sion",0.5320238317450955,0.5351324439768573
+16.05,16.06,shrink_overall,1000,2,5,nasus|vex,"Nasus, Vex",0.531527694201771,0.5321761800706452
+16.05,16.06,shrink_overall,1000,2,6,ahri|sion,"Ahri, Sion",0.5312775861916184,0.5328993693174969
+16.05,16.06,shrink_overall,1000,2,7,nasus|veigar,"Nasus, Veigar",0.5308927626570971,0.5318438884752826
+16.05,16.06,shrink_overall,1000,2,8,annie|sion,"Annie, Sion",0.5308483335512703,0.537263692299631
+16.05,16.06,shrink_overall,1000,2,9,nasus|xerath,"Nasus, Xerath",0.5308193484904676,0.5314747061257301
+16.05,16.06,shrink_overall,1000,2,10,aurelionsol|sion,"Aurelion Sol, Sion",0.5307440780733197,0.5352786570347187
+16.05,16.06,shrink_overall,1000,3,1,sion|vex|xerath,"Sion, Vex, Xerath",0.5373665761953144,0.5429036180836946
+16.05,16.06,shrink_overall,1000,3,2,nasus|sion|vex,"Nasus, Sion, Vex",0.5359425386561993,0.5434239703723853
+16.05,16.06,shrink_overall,1000,3,3,sion|veigar|xerath,"Sion, Veigar, Xerath",0.5358191766443043,0.5406473296892219
+16.05,16.06,shrink_overall,1000,3,4,nasus|sion|xerath,"Nasus, Sion, Xerath",0.5355748510598579,0.5450715849250453
+16.05,16.06,shrink_overall,1000,3,5,annie|sion|xerath,"Annie, Sion, Xerath",0.5353490842482153,0.542051179646606
+16.05,16.06,shrink_overall,1000,3,6,nasus|vex|xerath,"Nasus, Vex, Xerath",0.5353327021768203,0.5403773922925436
+16.05,16.06,shrink_overall,1000,3,7,aurelionsol|sion|vex,"Aurelion Sol, Sion, Vex",0.5352631147996079,0.5421798238087076
+16.05,16.06,shrink_overall,1000,3,8,malzahar|sion|xerath,"Malzahar, Sion, Xerath",0.5352348071992754,0.5396179068246679
+16.05,16.06,shrink_overall,1000,3,9,nasus|sion|veigar,"Nasus, Sion, Veigar",0.5351272353742447,0.5440583570694293
+16.05,16.06,shrink_overall,1000,3,10,sion|veigar|vex,"Sion, Veigar, Vex",0.5350771510326555,0.5400763910755512
+16.05,16.06,shrink_overall,1000,4,1,nasus|sion|vex|xerath,"Nasus, Sion, Vex, Xerath",0.538921117295884,0.5498983597863086
+16.05,16.06,shrink_overall,1000,4,2,sion|veigar|vex|xerath,"Sion, Veigar, Vex, Xerath",0.5386925652126789,0.5444707684831092
+16.05,16.06,shrink_overall,1000,4,3,malzahar|sion|vex|xerath,"Malzahar, Sion, Vex, Xerath",0.5384990327819781,0.5441106379002553
+16.05,16.06,shrink_overall,1000,4,4,aurelionsol|sion|vex|xerath,"Aurelion Sol, Sion, Vex, Xerath",0.5381428027132646,0.5456767152383313
+16.05,16.06,shrink_overall,1000,4,5,mel|sion|vex|xerath,"Mel, Sion, Vex, Xerath",0.5381125180956419,0.5441564961736527
+16.05,16.06,shrink_overall,1000,4,6,morgana|sion|vex|xerath,"Morgana, Sion, Vex, Xerath",0.5380298462839872,0.5463656305825512
+16.05,16.06,shrink_overall,1000,4,7,ahri|sion|vex|xerath,"Ahri, Sion, Vex, Xerath",0.5379156097426983,0.5433070193016561
+16.05,16.06,shrink_overall,1000,4,8,annie|sion|vex|xerath,"Annie, Sion, Vex, Xerath",0.5378178024934678,0.54466025549267
+16.05,16.06,shrink_overall,1000,4,9,fizz|sion|vex|xerath,"Fizz, Sion, Vex, Xerath",0.5378112360574363,0.5454265220885021
+16.05,16.06,shrink_overall,1000,4,10,aurelionsol|nasus|sion|vex,"Aurelion Sol, Nasus, Sion, Vex",0.5377980325361111,0.5488944952904397

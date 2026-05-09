@@ -1,0 +1,33 @@
+patch,pool_size,method,selected_pool,score
+16.07,1,optimized_pool_score,Sion,0.5260083186720051
+16.07,1,baseline_highest_winrate,Sion,0.5260083186720051
+16.07,1,baseline_highest_blindscore,Sion,0.5260083186720051
+16.07,1,baseline_highest_pickrate,Ahri,0.5067117460362895
+16.07,2,optimized_pool_score,"Sion, Vel'Koz",0.5428692687789032
+16.07,2,baseline_highest_winrate,"Sion, Annie",0.5397676014723153
+16.07,2,baseline_highest_blindscore,"Sion, Anivia",0.5398110652127559
+16.07,2,baseline_highest_pickrate,"Ahri, Yasuo",0.5137412953700822
+16.07,3,optimized_pool_score,"Sion, Swain, Vel'Koz",0.5490071832943871
+16.07,3,baseline_highest_winrate,"Sion, Annie, Xerath",0.5458865625259949
+16.07,3,baseline_highest_blindscore,"Sion, Anivia, Xerath",0.5464551364485207
+16.07,3,baseline_highest_pickrate,"Ahri, Yasuo, Malzahar",0.5228905615190725
+16.07,4,optimized_pool_score,"Aurelion Sol, Sion, Swain, Vex",0.5525144411635112
+16.07,4,baseline_highest_winrate,"Sion, Annie, Xerath, Aurelion Sol",0.5500102794718235
+16.07,4,baseline_highest_blindscore,"Sion, Anivia, Xerath, Aurelion Sol",0.5499662345351866
+16.07,4,baseline_highest_pickrate,"Ahri, Yasuo, Malzahar, Viktor",0.5252354518055767
+16.07,5,optimized_pool_score,"Sion, Vel'Koz, Swain, Vex, Aurelion Sol",0.5553433922169838
+16.07,5,baseline_highest_winrate,"Sion, Annie, Xerath, Aurelion Sol, Veigar",0.5519758447232652
+16.07,5,baseline_highest_blindscore,"Sion, Anivia, Xerath, Aurelion Sol, Lissandra",0.5515188102695915
+16.07,5,baseline_highest_pickrate,"Ahri, Yasuo, Malzahar, Viktor, Sylas",0.5261736394469482
+16.07,6,optimized_pool_score,"Sion, Vel'Koz, Swain, Vex, Aurelion Sol, Brand",0.5572427190101648
+16.07,6,baseline_highest_winrate,"Sion, Annie, Xerath, Aurelion Sol, Veigar, Malzahar",0.5530041361190551
+16.07,6,baseline_highest_blindscore,"Sion, Anivia, Xerath, Aurelion Sol, Lissandra, Fizz",0.5528080078664905
+16.07,6,baseline_highest_pickrate,"Ahri, Yasuo, Malzahar, Viktor, Sylas, Zed",0.5270784239630097
+16.07,7,optimized_pool_score,"Sion, Vel'Koz, Swain, Vex, Aurelion Sol, Brand, Fizz",0.558805886863622
+16.07,7,baseline_highest_winrate,"Sion, Annie, Xerath, Aurelion Sol, Veigar, Malzahar, Vex",0.5541771116946482
+16.07,7,baseline_highest_blindscore,"Sion, Anivia, Xerath, Aurelion Sol, Lissandra, Fizz, Annie",0.5545112243515394
+16.07,7,baseline_highest_pickrate,"Ahri, Yasuo, Malzahar, Viktor, Sylas, Zed, Akali",0.5288382288699766
+16.07,8,optimized_pool_score,"Sion, Vel'Koz, Swain, Vex, Aurelion Sol, Brand, Fizz, Akshan",0.5598169633370542
+16.07,8,baseline_highest_winrate,"Sion, Annie, Xerath, Aurelion Sol, Veigar, Malzahar, Vex, Swain",0.5570523908050403
+16.07,8,baseline_highest_blindscore,"Sion, Anivia, Xerath, Aurelion Sol, Lissandra, Fizz, Annie, Malzahar",0.5553984024369556
+16.07,8,baseline_highest_pickrate,"Ahri, Yasuo, Malzahar, Viktor, Sylas, Zed, Akali, Mel",0.5299494001147136

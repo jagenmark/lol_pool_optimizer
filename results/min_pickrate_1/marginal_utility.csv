@@ -1,0 +1,9 @@
+patch,pool_size,optimized_pool,score,marginal_gain
+16.07,1,Sion,0.5260083186720051,
+16.07,2,"Sion, Vel'Koz",0.5428692687789032,0.01686095010689803
+16.07,3,"Sion, Swain, Vel'Koz",0.5490071832943871,0.006137914515483955
+16.07,4,"Aurelion Sol, Sion, Swain, Vex",0.5525144411635112,0.003507257869124092
+16.07,5,"Sion, Vel'Koz, Swain, Vex, Aurelion Sol",0.5553433922169838,0.0028289510534725837
+16.07,6,"Sion, Vel'Koz, Swain, Vex, Aurelion Sol, Brand",0.5572427190101648,0.0018993267931809443
+16.07,7,"Sion, Vel'Koz, Swain, Vex, Aurelion Sol, Brand, Fizz",0.558805886863622,0.0015631678534572258
+16.07,8,"Sion, Vel'Koz, Swain, Vex, Aurelion Sol, Brand, Fizz, Akshan",0.5598169633370542,0.0010110764734322375

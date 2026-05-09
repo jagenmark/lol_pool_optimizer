@@ -1,0 +1,7 @@
+train_patch,test_patch,model_name,selection_strategy,pool_size,selected_pool,train_score,test_score
+16.05,16.06,optimized_pool_score,exact_bruteforce,3,"Morgana, Nasus, Sion",0.5498672912222188,0.5440079226413277
+16.05,16.06,baseline_highest_winrate,baseline,3,"Sion, Nasus, Xerath",0.5493155903234347,0.545071584925045
+16.05,16.06,baseline_highest_blindscore,baseline,3,"Sion, Nasus, Anivia",0.5458460624692446,0.541154794095679
+16.06,16.07,optimized_pool_score,exact_bruteforce,3,"Nasus, Sion, Swain",0.545463568525634,0.5476540295240403
+16.06,16.07,baseline_highest_winrate,baseline,3,"Sion, Swain, Brand",0.5418694157679561,0.5454435877168543
+16.06,16.07,baseline_highest_blindscore,baseline,3,"Sion, Swain, Aurelion Sol",0.5421289656443486,0.5480694013642854

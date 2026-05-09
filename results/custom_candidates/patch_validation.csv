@@ -1,0 +1,7 @@
+train_patch,test_patch,pool_size,method,selected_pool,train_score,test_score
+16.05,16.06,3,optimized_pool_score,"Anivia, Vex, Xerath",0.5369917181670154,0.5332583834810101
+16.05,16.06,3,baseline_highest_winrate,"Xerath, Anivia, Vex",0.5369917181670154,0.5332583834810101
+16.05,16.06,3,baseline_highest_blindscore,"Anivia, Xerath, Ahri",0.5321707231120756,0.5274855939516269
+16.06,16.07,3,optimized_pool_score,"Anivia, Vex, Xerath",0.5332583834810101,0.5336112710651837
+16.06,16.07,3,baseline_highest_winrate,"Xerath, Vex, Anivia",0.5332583834810101,0.5336112710651837
+16.06,16.07,3,baseline_highest_blindscore,"Anivia, Xerath, Vex",0.5332583834810101,0.5336112710651837

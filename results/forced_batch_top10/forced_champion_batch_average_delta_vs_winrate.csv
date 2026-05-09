@@ -1,0 +1,5 @@
+model_name,average_delta_vs_winrate_baseline
+optimized_model_forced,0.004824196363551037
+baseline_blindscore_forced,0.0018302242083295562
+baseline_winrate_forced,0.0
+baseline_pickrate_forced,-0.0070837307837757655

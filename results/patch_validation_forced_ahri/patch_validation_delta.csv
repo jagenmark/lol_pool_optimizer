@@ -1,0 +1,7 @@
+train_patch,test_patch,transition,pool_size,method,selected_pool,test_score,baseline_highest_winrate_test_score,delta_vs_baseline_highest_winrate
+16.05,16.06,16.05 → 16.06,3,optimized_pool_score,"Ahri, Vel'Koz, Vex",0.530168706305038,0.5262292960617062,0.003939410243331776
+16.05,16.06,16.05 → 16.06,3,baseline_highest_blindscore,"Ahri, Anivia, Xerath",0.5274855939516269,0.5262292960617062,0.0012562978899206545
+16.05,16.06,16.05 → 16.06,3,baseline_highest_pickrate,"Ahri, Yasuo, Malzahar",0.5208156767119521,0.5262292960617062,-0.005413619349754151
+16.06,16.07,16.06 → 16.07,3,optimized_pool_score,"Ahri, Swain, Xerath",0.5288047388921602,0.5265455815104054,0.0022591573817547506
+16.06,16.07,16.06 → 16.07,3,baseline_highest_blindscore,"Ahri, Swain, Aurelion Sol",0.5301034259699529,0.5265455815104054,0.0035578444595474323
+16.06,16.07,16.06 → 16.07,3,baseline_highest_pickrate,"Ahri, Yasuo, Malzahar",0.5228905615190725,0.5265455815104054,-0.0036550199913328862

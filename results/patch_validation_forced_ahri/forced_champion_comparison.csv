@@ -1,0 +1,5 @@
+patch,pool_size,forced_champions,model_name,selected_pool,score
+16.05,3,Ahri,optimized_model_forced,"Ahri, Vel'Koz, Vex",0.5356563510496489
+16.05,3,Ahri,baseline_winrate_forced,"Ahri, Xerath, Veigar",0.5308184019112393
+16.05,3,Ahri,baseline_blindscore_forced,"Ahri, Anivia, Xerath",0.5321707231120756
+16.05,3,Ahri,baseline_pickrate_forced,"Ahri, Yasuo, Malzahar",0.5261444886254327

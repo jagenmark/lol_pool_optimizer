@@ -1,0 +1,5 @@
+model_name,average_score
+optimized_model_forced,0.5342038030981613
+baseline_blindscore_forced,0.5312098309429398
+baseline_winrate_forced,0.5293796067346103
+baseline_pickrate_forced,0.5222958759508345

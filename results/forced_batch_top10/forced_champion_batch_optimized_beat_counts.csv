@@ -1,0 +1,4 @@
+baseline_model_name,optimized_win_count,comparison_count
+baseline_winrate_forced,10,10
+baseline_blindscore_forced,10,10
+baseline_pickrate_forced,10,10

@@ -1,0 +1,9 @@
+patch,pool_size,optimized_pool,score,marginal_gain
+16.05,1,Anivia,0.5179348944443215,
+16.05,2,"Vex, Xerath",0.5320631935618636,0.014128299117542098
+16.05,3,"Vel'Koz, Vex, Xerath",0.5388320442295531,0.006768850667689508
+16.05,4,"Naafiri, Vel'Koz, Vex, Xerath",0.5424348208604342,0.003602776630881044
+16.05,5,"Anivia, Xerath, Vex, Vel'Koz, Naafiri",0.5445593680032679,0.0021245471428337215
+16.05,6,"Anivia, Xerath, Vex, Vel'Koz, Naafiri, Brand",0.5465593184035491,0.001999950400281225
+16.05,7,"Anivia, Xerath, Vex, Vel'Koz, Naafiri, Brand, Veigar",0.5480100537823269,0.0014507353787778232
+16.05,8,"Anivia, Xerath, Vex, Vel'Koz, Naafiri, Brand, Veigar, Aurelion Sol",0.5491214389834234,0.0011113852010964376

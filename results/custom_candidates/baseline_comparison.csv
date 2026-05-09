@@ -1,0 +1,25 @@
+patch,pool_size,method,selected_pool,score
+16.07,1,optimized_pool_score,Anivia,0.5156913528022633
+16.07,1,baseline_highest_winrate,Xerath,0.5144019516489485
+16.07,1,baseline_highest_blindscore,Anivia,0.5156913528022633
+16.07,2,optimized_pool_score,"Vex, Xerath",0.5279801485537478
+16.07,2,baseline_highest_winrate,"Xerath, Vex",0.5279801485537478
+16.07,2,baseline_highest_blindscore,"Anivia, Xerath",0.527230702161287
+16.07,3,optimized_pool_score,"Anivia, Vex, Xerath",0.5336112710651837
+16.07,3,baseline_highest_winrate,"Xerath, Vex, Anivia",0.5336112710651837
+16.07,3,baseline_highest_blindscore,"Anivia, Xerath, Vex",0.5336112710651837
+16.07,4,optimized_pool_score,"Anivia, Vex, Yone, Xerath",0.5357144275417254
+16.07,4,baseline_highest_winrate,"Xerath, Vex, Anivia, Viktor",0.5336970134506962
+16.07,4,baseline_highest_blindscore,"Anivia, Xerath, Vex, Viktor",0.5336970134506962
+16.07,5,optimized_pool_score,"Anivia, Vex, Yone, Hwei, Xerath",0.5372108362941042
+16.07,5,baseline_highest_winrate,"Xerath, Vex, Anivia, Viktor, Ahri",0.535329595781678
+16.07,5,baseline_highest_blindscore,"Anivia, Xerath, Vex, Viktor, Ahri",0.535329595781678
+16.07,6,optimized_pool_score,"Anivia, Vex, Akali, Yone, Hwei, Xerath",0.5385288126198036
+16.07,6,baseline_highest_winrate,"Xerath, Vex, Anivia, Viktor, Ahri, Twisted Fate",0.535997691597683
+16.07,6,baseline_highest_blindscore,"Anivia, Xerath, Vex, Viktor, Ahri, Twisted Fate",0.535997691597683
+16.07,7,optimized_pool_score,"Anivia, Vex, Akali, Yone, Taliyah, Hwei, Xerath",0.5393881764351822
+16.07,7,baseline_highest_winrate,"Xerath, Vex, Anivia, Viktor, Ahri, Twisted Fate, Hwei",0.5371480716091833
+16.07,7,baseline_highest_blindscore,"Anivia, Xerath, Vex, Viktor, Ahri, Twisted Fate, Hwei",0.5371480716091833
+16.07,8,optimized_pool_score,"Ahri, Anivia, Vex, Akali, Yone, Taliyah, Hwei, Xerath",0.5396901194830405
+16.07,8,baseline_highest_winrate,"Xerath, Vex, Anivia, Viktor, Ahri, Twisted Fate, Hwei, Akali",0.5379014341016142
+16.07,8,baseline_highest_blindscore,"Anivia, Xerath, Vex, Viktor, Ahri, Twisted Fate, Hwei, Akali",0.5379014341016142

@@ -1,0 +1,9 @@
+train_patch,test_patch,pool_size,forced_champions,method,selected_pool,train_score,test_score
+16.05,16.06,3,Ahri,optimized_pool_score,"Ahri, Vel'Koz, Vex",0.5356563510496489,0.530168706305038
+16.05,16.06,3,Ahri,baseline_highest_winrate,"Ahri, Xerath, Veigar",0.5308184019112393,0.5262292960617062
+16.05,16.06,3,Ahri,baseline_highest_blindscore,"Ahri, Anivia, Xerath",0.5321707231120756,0.5274855939516269
+16.05,16.06,3,Ahri,baseline_highest_pickrate,"Ahri, Yasuo, Malzahar",0.5261444886254327,0.5208156767119521
+16.06,16.07,3,Ahri,optimized_pool_score,"Ahri, Swain, Xerath",0.5336287142648585,0.5288047388921602
+16.06,16.07,3,Ahri,baseline_highest_winrate,"Ahri, Swain, Brand",0.5299242390617589,0.5265455815104054
+16.06,16.07,3,Ahri,baseline_highest_blindscore,"Ahri, Swain, Aurelion Sol",0.5321126235998379,0.5301034259699529
+16.06,16.07,3,Ahri,baseline_highest_pickrate,"Ahri, Yasuo, Malzahar",0.5208156767119521,0.5228905615190725

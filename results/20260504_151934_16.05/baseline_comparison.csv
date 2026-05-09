@@ -1,0 +1,25 @@
+patch,pool_size,model_name,selection_strategy,selected_pool,score
+16.05,1,optimized_pool_score,exact_bruteforce,Sion,0.5227362641532325
+16.05,1,baseline_highest_winrate,rank_by_summary_winrate,Sion,0.5227362641532325
+16.05,1,baseline_highest_blindscore,rank_by_blindscore,Sion,0.5227362641532325
+16.05,2,optimized_pool_score,exact_bruteforce,"Nasus, Sion",0.5402550998117949
+16.05,2,baseline_highest_winrate,rank_by_summary_winrate,"Sion, Nasus",0.5402550998117949
+16.05,2,baseline_highest_blindscore,rank_by_blindscore,"Sion, Nasus",0.5402550998117949
+16.05,3,optimized_pool_score,exact_bruteforce,"Kayle, Nasus, Sion",0.5505084005398523
+16.05,3,baseline_highest_winrate,rank_by_summary_winrate,"Sion, Nasus, Xerath",0.5493155903234347
+16.05,3,baseline_highest_blindscore,rank_by_blindscore,"Sion, Nasus, Anivia",0.5458460624692446
+16.05,4,optimized_pool_score,exact_bruteforce,"Kayle, Kog'Maw, Nasus, Sion",0.5560742194400097
+16.05,4,baseline_highest_winrate,rank_by_summary_winrate,"Sion, Nasus, Xerath, Veigar",0.5526943641127823
+16.05,4,baseline_highest_blindscore,rank_by_blindscore,"Sion, Nasus, Anivia, Xerath",0.5510804649466394
+16.05,5,optimized_pool_score,greedy_forward,"Sion, Nasus, Kayle, Kog'Maw, Pantheon",0.5589158459734391
+16.05,5,baseline_highest_winrate,rank_by_summary_winrate,"Sion, Nasus, Xerath, Veigar, Pantheon",0.5556535349883359
+16.05,5,baseline_highest_blindscore,rank_by_blindscore,"Sion, Nasus, Anivia, Xerath, Kayle",0.5544971336789424
+16.05,6,optimized_pool_score,greedy_forward,"Sion, Nasus, Kayle, Kog'Maw, Pantheon, Morgana",0.5610890982311553
+16.05,6,baseline_highest_winrate,rank_by_summary_winrate,"Sion, Nasus, Xerath, Veigar, Pantheon, Brand",0.5567386485946706
+16.05,6,baseline_highest_blindscore,rank_by_blindscore,"Sion, Nasus, Anivia, Xerath, Kayle, Veigar",0.5561390942343322
+16.05,7,optimized_pool_score,greedy_forward,"Sion, Nasus, Kayle, Kog'Maw, Pantheon, Morgana, Naafiri",0.5630351451531248
+16.05,7,baseline_highest_winrate,rank_by_summary_winrate,"Sion, Nasus, Xerath, Veigar, Pantheon, Brand, Anivia",0.5573788750177535
+16.05,7,baseline_highest_blindscore,rank_by_blindscore,"Sion, Nasus, Anivia, Xerath, Kayle, Veigar, Ahri",0.5570223098508367
+16.05,8,optimized_pool_score,greedy_forward,"Sion, Nasus, Kayle, Kog'Maw, Pantheon, Morgana, Naafiri, Malphite",0.5644085935607391
+16.05,8,baseline_highest_winrate,rank_by_summary_winrate,"Sion, Nasus, Xerath, Veigar, Pantheon, Brand, Anivia, Swain",0.5579944200683054
+16.05,8,baseline_highest_blindscore,rank_by_blindscore,"Sion, Nasus, Anivia, Xerath, Kayle, Veigar, Ahri, Annie",0.557649870696051

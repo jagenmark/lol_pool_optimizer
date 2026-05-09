@@ -1,4 +1,4 @@
-requests
-beautifulsoup4
-lxml
-playwright
+pandas>=2.0
+plotly>=5.0
+streamlit>=1.30
+matplotlib>=3.7
