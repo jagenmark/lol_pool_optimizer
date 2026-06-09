@@ -17,6 +17,11 @@ if str(SRC_DIR) not in sys.path:
 
 from data_loader import LoadedInputs, load_patch_data
 from main import filter_candidates_by_pickrate
+from matchup_estimator import (
+    DEFAULT_EB_ALPHA,
+    EstimatorName,
+    build_shrinkage_comparison,
+)
 from optimizer import rank_pools
 from scoring import build_counterpick_table, compute_blind_scores, pool_score
 from utils import canonicalize_champion_name, parse_candidates_from_args, resolve_data_dir
@@ -146,6 +151,24 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         default=500_000,
         help="Use exact brute force only when n choose k is at or below this limit; otherwise use greedy selection.",
+    )
+    parser.add_argument(
+        "--estimator",
+        choices=("raw", "eb"),
+        default="raw",
+        help="Matchup estimator used throughout the results workflow. Default: raw.",
+    )
+    parser.add_argument(
+        "--eb-alpha",
+        type=float,
+        default=DEFAULT_EB_ALPHA,
+        help="Empirical Bayes prior sample size. Default: 100.",
+    )
+    parser.add_argument(
+        "--eb-mu",
+        type=float,
+        default=None,
+        help="Optional EB prior mean in [0, 1]. Defaults to the weighted global mean.",
     )
     return parser
 
@@ -626,11 +649,26 @@ def generate_patch_validation(
     pool_size: int,
     max_exact_combinations: int,
     raw_forced_champions: list[str],
+    estimator: EstimatorName,
+    eb_alpha: float,
+    eb_mu: float | None,
 ) -> pd.DataFrame:
     rows: list[dict[str, object]] = []
     for train_patch, test_patch in zip(patches, patches[1:]):
-        train = load_patch_data(train_patch, data_dir)
-        test = load_patch_data(test_patch, data_dir)
+        train = load_patch_data(
+            train_patch,
+            data_dir,
+            estimator=estimator,
+            eb_alpha=eb_alpha,
+            eb_mu=eb_mu,
+        )
+        test = load_patch_data(
+            test_patch,
+            data_dir,
+            estimator=estimator,
+            eb_alpha=eb_alpha,
+            eb_mu=eb_mu,
+        )
         train_candidates, _ = select_candidates(
             train,
             raw_candidates,
@@ -1150,6 +1188,10 @@ def write_run_metadata(path: Path, args: argparse.Namespace, candidate_info: dic
         f"pool_size: {args.pool_size}",
         f"max_pool_size: {args.max_pool_size}",
         f"max_exact_combinations: {args.max_exact_combinations}",
+        f"estimator: {args.estimator}",
+        f"eb_alpha: {args.eb_alpha}",
+        f"eb_mu: {args.eb_mu if args.eb_mu is not None else 'weighted_global_mean_per_patch'}",
+        f"resolved_primary_patch_eb_mu: {args.resolved_eb_mu}",
         f"lowest_pickrate: {args.lowest_pickrate}",
         f"candidates_file: {args.candidates_file}",
         f"force_champion: {', '.join(parse_forced_champions(args)) if parse_forced_champions(args) else ''}",
@@ -1163,8 +1205,6 @@ def write_run_metadata(path: Path, args: argparse.Namespace, candidate_info: dic
         f"candidate_count_before_filtering: {candidate_info['candidate_count_before_filtering']}",
         f"candidate_count_after_filtering: {candidate_info['candidate_count_after_filtering']}",
         f"candidates_removed_by_pickrate: {candidate_info['candidates_removed_by_pickrate']}",
-        "",
-        "TODO: If shrinkage is added later, extend the diagnostic with shrinkage adjustments.",
     ]
     path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -1185,7 +1225,14 @@ def main() -> None:
     args.patches = patches
     raw_forced_champions = parse_forced_champions(args)
 
-    loaded = load_patch_data(primary_patch, data_dir)
+    loaded = load_patch_data(
+        primary_patch,
+        data_dir,
+        estimator=args.estimator,
+        eb_alpha=args.eb_alpha,
+        eb_mu=args.eb_mu,
+    )
+    args.resolved_eb_mu = loaded.eb_mu
     candidates, candidate_info = select_candidates(
         loaded,
         args.candidates,
@@ -1208,6 +1255,9 @@ def main() -> None:
     output_dir = Path(args.output_dir) if args.output_dir else ROOT_DIR / "results" / primary_patch
     run_dir = create_run_dir(output_dir)
     warnings: list[str] = []
+
+    shrinkage_df = build_shrinkage_comparison(loaded.matchup_df)
+    shrinkage_df.to_csv(run_dir / "matchup_shrinkage_comparison.csv", index=False)
 
     # Recommended pool: the main model output for the chosen k.
     recommended_df = generate_recommended_pool(
@@ -1246,6 +1296,9 @@ def main() -> None:
             args.pool_size,
             args.max_exact_combinations,
             raw_forced_champions,
+            args.estimator,
+            args.eb_alpha,
+            args.eb_mu,
         )
         validation_df.to_csv(run_dir / "patch_validation.csv", index=False)
         if not validation_df.empty:
@@ -1328,7 +1381,7 @@ def main() -> None:
     heatmap_df.to_csv(run_dir / "matchup_heatmap_values.csv", index=False)
     plot_matchup_heatmap(heatmap_df, run_dir / "matchup_heatmap.png")
 
-    # Uncertainty diagnostic placeholder: sample sizes matter even before shrinkage exists.
+    # Sample-size diagnostic for interpreting raw and shrinkage-adjusted matchups.
     games_df, histogram_df = generate_matchup_games_histogram(
         loaded,
         run_dir / "matchup_games_histogram.png",

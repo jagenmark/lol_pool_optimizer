@@ -1,0 +1,6 @@
+objective,score_definition,best_pool,score,sion_in_pool,pantheon_in_pool,scope_count,notes
+deterministic_eb,deterministic EB point estimate,"Pantheon, Sion, Xerath",0.542309355221224,True,True,1,Primary patch 16.07 scope.
+fixed_policy_mean,fixed-policy posterior mean,"Pantheon, Sion, Xerath",0.5423093552212241,True,True,1,Primary patch 16.07 scope.
+fixed_policy_lower_5,fixed-policy normal-approx lower 5%,"Pantheon, Sion, Xerath",0.5372788398282852,True,True,1,Primary patch 16.07 scope.
+fixed_policy_mean_minus_1sd,fixed-policy mean - 1 sd,"Pantheon, Sion, Xerath",0.5392510190200496,True,True,1,Primary patch 16.07 scope.
+worst_scope_score,maximize minimum deterministic EB score across local OP.GG scopes,"Katarina, Pantheon, Xerath",0.5288409052277111,False,True,12,Restricted to champions present in every included scope.

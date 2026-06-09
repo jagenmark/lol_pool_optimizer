@@ -1,0 +1,26 @@
+method,score_definition,best_pool,score,sion_in_pool,pantheon_in_pool,notes
+posterior_fixed-policy,posterior simulation mean,"Pantheon, Sion, Xerath",0.5422081484754916,True,True,Fixed-policy is practical; oracle is an uncertainty upper bound.
+posterior_oracle,posterior simulation mean,"Pantheon, Sion, Vel'Koz",0.5471475999842589,True,True,Fixed-policy is practical; oracle is an uncertainty upper bound.
+alpha_0,deterministic EB point estimate,"Pantheon, Sion, Vel'Koz",0.5533629795822144,True,True,Shrinkage sensitivity.
+alpha_25,deterministic EB point estimate,"Pantheon, Sion, Vel'Koz",0.5491600373603092,True,True,Shrinkage sensitivity.
+alpha_50,deterministic EB point estimate,"Pantheon, Sion, Xerath",0.5462958377316645,True,True,Shrinkage sensitivity.
+alpha_100,deterministic EB point estimate,"Pantheon, Sion, Xerath",0.5423093552212241,True,True,Shrinkage sensitivity.
+alpha_250,deterministic EB point estimate,"Pantheon, Sion, Xerath",0.534706712209623,True,True,Shrinkage sensitivity.
+alpha_500,deterministic EB point estimate,"Sion, Vex, Xerath",0.5289087473414922,True,False,Shrinkage sensitivity.
+alpha_1000,deterministic EB point estimate,"Lissandra, Sion, Xerath",0.5229825932591354,True,False,Shrinkage sensitivity.
+enemy_frequency_perturbation,winner rate under Dirichlet-perturbed enemy frequencies,"Pantheon, Sion, Xerath",1.0,True,True,Score is frequency of being the winning pool.
+scope_stability,count of local OP.GG scopes where pool is best,"Fizz, Sion, Vex",2.0,True,False,Across local aggregate patch/rank scopes.
+offmeta_lambda_0,poolscore - lambda * mean offmeta penalty,"Pantheon, Sion, Xerath",0.5423093552212241,True,True,Aggregate generalizability stress test.
+offmeta_lambda_0.001,poolscore - lambda * mean offmeta penalty,"Pantheon, Sion, Xerath",0.5419435807409299,True,True,Aggregate generalizability stress test.
+offmeta_lambda_0.0025,poolscore - lambda * mean offmeta penalty,"Pantheon, Sion, Xerath",0.5413949190204884,True,True,Aggregate generalizability stress test.
+offmeta_lambda_0.005,poolscore - lambda * mean offmeta penalty,"Pantheon, Sion, Xerath",0.5404804828197527,True,True,Aggregate generalizability stress test.
+offmeta_lambda_0.01,poolscore - lambda * mean offmeta penalty,"Pantheon, Sion, Xerath",0.5386516104182812,True,True,Aggregate generalizability stress test.
+offmeta_lambda_0.025,poolscore - lambda * mean offmeta penalty,"Sion, Veigar, Xerath",0.5337629802800355,True,False,Aggregate generalizability stress test.
+offmeta_lambda_0.05,poolscore - lambda * mean offmeta penalty,"Sion, Veigar, Xerath",0.5285420809590832,True,False,Aggregate generalizability stress test.
+offmeta_lambda_0.1,poolscore - lambda * mean offmeta penalty,"Annie, Veigar, Xerath",0.5225492013770547,False,False,Aggregate generalizability stress test.
+residual_adjusted,logit residual model with champion main effect removed,"Mel, Naafiri, Sion",0.5256704002486992,True,False,Diagnostic only; not a causal correction.
+deterministic_eb,deterministic EB point estimate,"Pantheon, Sion, Xerath",0.542309355221224,True,True,Primary patch 16.07 scope.
+fixed_policy_mean,fixed-policy posterior mean,"Pantheon, Sion, Xerath",0.5423093552212241,True,True,Primary patch 16.07 scope.
+fixed_policy_lower_5,fixed-policy normal-approx lower 5%,"Pantheon, Sion, Xerath",0.5372788398282852,True,True,Primary patch 16.07 scope.
+fixed_policy_mean_minus_1sd,fixed-policy mean - 1 sd,"Pantheon, Sion, Xerath",0.5392510190200496,True,True,Primary patch 16.07 scope.
+worst_scope_score,maximize minimum deterministic EB score across local OP.GG scopes,"Katarina, Pantheon, Xerath",0.5288409052277111,False,True,Restricted to champions present in every included scope.

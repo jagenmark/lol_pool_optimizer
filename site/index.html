@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Patch-based League of Legends midlane champion pool optimizer.">
+  <title>LoL Mid Pool Optimizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">M</div>
+        <div>
+          <strong>Mid Pool Optimizer</strong>
+          <span>Patch matchup analysis</span>
+        </div>
+      </div>
+
+      <div class="control-row">
+        <label for="patch-select">Patch</label>
+        <select id="patch-select">
+          <option>16.05</option>
+          <option>16.06</option>
+          <option selected>16.07</option>
+        </select>
+      </div>
+      <div class="control-row">
+        <label for="pool-size">Pool size</label>
+        <input id="pool-size" type="number" min="1" max="10" value="3">
+      </div>
+
+      <section class="picker" aria-labelledby="candidate-heading">
+        <div class="section-heading">
+          <label id="candidate-heading">Candidate champions</label>
+          <span id="candidate-count">0 / 0</span>
+        </div>
+        <div class="quick-actions">
+          <button id="include-all" class="button button-secondary" type="button">Include all</button>
+          <button id="exclude-all" class="button button-secondary" type="button">Exclude all</button>
+        </div>
+        <div id="selected-champions" class="selected-list" aria-live="polite"></div>
+        <input id="champion-search" class="search-input" type="search" placeholder="type to add..." autocomplete="off">
+        <div id="available-champions" class="available-list"></div>
+      </section>
+
+      <label class="toggle-row">
+        <input id="advanced-toggle" type="checkbox">
+        <span>Show advanced diagnostics</span>
+      </label>
+      <button id="run-optimizer" class="button button-primary" type="button">Run optimizer</button>
+      <p id="run-status" class="run-status" role="status"></p>
+    </aside>
+
+    <main class="main-content">
+      <header class="page-header">
+        <div>
+          <h1>LoL Midlane Champion Pool Optimizer</h1>
+          <p>Build a candidate set, optimize it, then inspect which matchups carry the recommendation.</p>
+        </div>
+        <span id="search-badge" class="status-badge">Ready</span>
+      </header>
+
+      <section id="empty-state" class="empty-state">
+        <h2>Choose a pool size and run the optimizer</h2>
+        <p>The initial candidate set includes every midlane champion available for the selected patch.</p>
+      </section>
+
+      <div id="results" hidden>
+        <section class="summary-strip" aria-label="Optimization summary">
+          <div><span>Best pool score</span><strong id="best-score"></strong></div>
+          <div><span>Best blind pick</span><strong id="best-blind"></strong></div>
+          <div><span>Blind score</span><strong id="blind-score"></strong></div>
+          <div><span>Patch</span><strong id="result-patch"></strong></div>
+          <div><span>Candidates</span><strong id="result-candidates"></strong></div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-title-row">
+            <div>
+              <h2>Best Pool</h2>
+              <p>The highest-scoring combination from the selected candidates.</p>
+            </div>
+          </div>
+          <div id="best-pool" class="best-pool"></div>
+        </section>
+
+        <section id="exclusion-section" class="notice" hidden>
+          <div class="notice-header">
+            <div>
+              <strong>Some matchup rows were excluded during scoring.</strong>
+              <span>The remaining enemy frequencies were renormalized.</span>
+            </div>
+            <button id="exclusion-toggle" class="button button-quiet" type="button" aria-expanded="false">Show details</button>
+          </div>
+          <div id="exclusion-details" hidden></div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-title-row">
+            <div>
+              <h2>Top 5 Pools</h2>
+              <p>The best few pools often have similar scores, so small differences should be interpreted cautiously.</p>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Rank</th><th>Pool champions</th><th>Score</th><th>Difference from best</th></tr></thead>
+              <tbody id="top-pools-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-title-row">
+            <div>
+              <h2>Counterpick Matrix</h2>
+              <p>Rows are enemy champions. Columns are champions in the selected pool.</p>
+            </div>
+            <div class="legend" aria-label="Matchup strength legend">
+              <span><i class="legend-weak"></i>Weak</span>
+              <span><i class="legend-even"></i>Even</span>
+              <span><i class="legend-strong"></i>Strong</span>
+            </div>
+          </div>
+          <div id="counterpick-matrix" class="matrix-shell"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-title-row">
+            <div>
+              <h2>Pool Responsibility</h2>
+              <p>Weighted share of the enemy population where each champion is the pool's best answer.</p>
+            </div>
+          </div>
+          <div id="responsibility-chart" class="bar-chart"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-title-row diagnostics-title">
+            <div>
+              <h2>Champion Diagnostics</h2>
+              <p>Blind score, patch statistics, and the matchups contributing most to the selected champion.</p>
+            </div>
+            <select id="diagnostic-champion" aria-label="Diagnostic champion"></select>
+          </div>
+          <div id="diagnostic-metrics" class="diagnostic-metrics"></div>
+          <h3>Top matchup contributions</h3>
+          <div id="contribution-chart" class="bar-chart contribution-chart"></div>
+          <div id="advanced-analysis" hidden>
+            <h3>Advanced profile analysis</h3>
+            <div id="profile-chart" class="profile-chart"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

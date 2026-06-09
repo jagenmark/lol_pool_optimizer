@@ -6,6 +6,11 @@ from typing import Dict, Iterable, Tuple
 
 import pandas as pd
 
+from matchup_estimator import (
+    DEFAULT_EB_ALPHA,
+    EstimatorName,
+    apply_matchup_estimator,
+)
 from utils import canonicalize_champion_name
 
 
@@ -42,6 +47,13 @@ OPTIONAL_SUMMARY_NUMERIC_COLUMNS = (
     "weighted_cvar_10",
 )
 OPTIONAL_SUMMARY_RATE_COLUMNS = {"winrate", "pickrate", "banrate", "worst10_mean", "weighted_cvar_10"}
+OPTIONAL_SUMMARY_TEXT_COLUMNS = (
+    "lane",
+    "patch",
+    "elo",
+    "source_url",
+    "extraction_date",
+)
 
 
 @dataclass(frozen=True)
@@ -54,6 +66,9 @@ class LoadedInputs:
     champion_count: int
     matchup_row_count: int
     frequency_status: str
+    estimator: EstimatorName
+    eb_alpha: float
+    eb_mu: float
 
 
 @dataclass(frozen=True)
@@ -271,9 +286,11 @@ def load_clean_matchup_data(path: Path) -> pd.DataFrame:
     standardized_df["winrate_ij"] = _normalize_rate_column(
         _coerce_numeric(df["matchup_winrate_i_vs_j"], "matchup_winrate_i_vs_j", path.name)
     )
+    # The source contains a rounded aggregate winrate rather than an exact win
+    # count, so wins_i is an inferred (possibly fractional) count.
     standardized_df["wins_i"] = (
         standardized_df["winrate_ij"] * standardized_df["games_ij"]
-    ).round().astype(int)
+    )
 
     self_matchup_rows = []
     all_champions = sorted(
@@ -386,6 +403,9 @@ def load_clean_summary_data(path: Path) -> pd.DataFrame:
             if column in OPTIONAL_SUMMARY_RATE_COLUMNS:
                 values = _normalize_rate_column(values)
             summary_df[column] = values
+    for column in OPTIONAL_SUMMARY_TEXT_COLUMNS:
+        if column in df.columns:
+            summary_df[column] = df[column].astype(str).str.strip()
 
     if summary_df["champion_key"].duplicated().any():
         duplicates = (
@@ -420,7 +440,12 @@ def merge_enemy_frequencies_into_matchups(
     return merged_df
 
 
-def load_clean_inputs(data_dir: Path) -> LoadedInputs:
+def load_clean_inputs(
+    data_dir: Path,
+    estimator: EstimatorName = "raw",
+    eb_alpha: float = DEFAULT_EB_ALPHA,
+    eb_mu: float | None = None,
+) -> LoadedInputs:
     matchup_path = _resolve_clean_path(data_dir, "opgg_mid_matchups_clean.csv")
     frequency_path = _resolve_clean_path(data_dir, "enemy_freq_df.csv")
     summary_path = _resolve_clean_path(data_dir, "opgg_mid_champion_summary.csv")
@@ -429,6 +454,12 @@ def load_clean_inputs(data_dir: Path) -> LoadedInputs:
     frequency_df, frequency_status = load_clean_frequency_data(frequency_path)
     summary_df = load_clean_summary_data(summary_path)
     matchup_df = merge_enemy_frequencies_into_matchups(matchup_df, frequency_df)
+    matchup_df, resolved_mu = apply_matchup_estimator(
+        matchup_df,
+        estimator=estimator,
+        eb_alpha=eb_alpha,
+        eb_mu=eb_mu,
+    )
     matchup_lookup = build_matchup_lookup(matchup_df)
 
     return LoadedInputs(
@@ -440,15 +471,29 @@ def load_clean_inputs(data_dir: Path) -> LoadedInputs:
         champion_count=int(matchup_df["champion_i"].nunique()),
         matchup_row_count=len(matchup_df),
         frequency_status=frequency_status,
+        estimator=estimator,
+        eb_alpha=eb_alpha,
+        eb_mu=resolved_mu,
     )
 
 
-def load_synthetic_inputs(data_dir: Path) -> LoadedInputs:
+def load_synthetic_inputs(
+    data_dir: Path,
+    estimator: EstimatorName = "raw",
+    eb_alpha: float = DEFAULT_EB_ALPHA,
+    eb_mu: float | None = None,
+) -> LoadedInputs:
     matchup_path = data_dir / "matchup_data.csv"
     frequency_path = data_dir / "enemy_frequency.csv"
 
     matchup_df = load_synthetic_matchup_data(matchup_path)
     frequency_df = load_synthetic_frequency_data(frequency_path)
+    matchup_df, resolved_mu = apply_matchup_estimator(
+        matchup_df,
+        estimator=estimator,
+        eb_alpha=eb_alpha,
+        eb_mu=eb_mu,
+    )
     matchup_lookup = build_matchup_lookup(matchup_df)
 
     return LoadedInputs(
@@ -460,10 +505,19 @@ def load_synthetic_inputs(data_dir: Path) -> LoadedInputs:
         champion_count=int(matchup_df["champion_i"].nunique()),
         matchup_row_count=len(matchup_df),
         frequency_status="present_in_synthetic_frequency_file",
+        estimator=estimator,
+        eb_alpha=eb_alpha,
+        eb_mu=resolved_mu,
     )
 
 
-def load_patch_data(patch: str, data_dir: Path) -> LoadedInputs:
+def load_patch_data(
+    patch: str,
+    data_dir: Path,
+    estimator: EstimatorName = "raw",
+    eb_alpha: float = DEFAULT_EB_ALPHA,
+    eb_mu: float | None = None,
+) -> LoadedInputs:
     """
     Load a single patch from data/<patch>/.
 
@@ -475,6 +529,12 @@ def load_patch_data(patch: str, data_dir: Path) -> LoadedInputs:
     frequency_df, frequency_status = load_clean_frequency_data(patch_paths.frequency_path)
     summary_df = load_clean_summary_data(patch_paths.summary_path)
     matchup_df = merge_enemy_frequencies_into_matchups(matchup_df, frequency_df)
+    matchup_df, resolved_mu = apply_matchup_estimator(
+        matchup_df,
+        estimator=estimator,
+        eb_alpha=eb_alpha,
+        eb_mu=eb_mu,
+    )
     matchup_lookup = build_matchup_lookup(matchup_df)
 
     return LoadedInputs(
@@ -486,12 +546,21 @@ def load_patch_data(patch: str, data_dir: Path) -> LoadedInputs:
         champion_count=int(matchup_df["champion_i"].nunique()),
         matchup_row_count=len(matchup_df),
         frequency_status=frequency_status,
+        estimator=estimator,
+        eb_alpha=eb_alpha,
+        eb_mu=resolved_mu,
     )
 
 
-def load_inputs(data_dir: Path, dataset: str = "clean") -> LoadedInputs:
+def load_inputs(
+    data_dir: Path,
+    dataset: str = "clean",
+    estimator: EstimatorName = "raw",
+    eb_alpha: float = DEFAULT_EB_ALPHA,
+    eb_mu: float | None = None,
+) -> LoadedInputs:
     if dataset == "clean":
-        return load_clean_inputs(data_dir)
+        return load_clean_inputs(data_dir, estimator, eb_alpha, eb_mu)
     if dataset == "synthetic":
-        return load_synthetic_inputs(data_dir)
+        return load_synthetic_inputs(data_dir, estimator, eb_alpha, eb_mu)
     raise ValueError(f"Unsupported dataset mode: {dataset}")

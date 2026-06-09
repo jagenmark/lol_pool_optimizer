@@ -1,0 +1,121 @@
+scope_id,patch,rank_scope,rank_scope_type,pool_rank,pool_label,pool_score,score_loss_vs_best
+16.05__plat_plus__cumulative,16.05,plat_plus,cumulative,1,"Sion, Vex, Xerath",0.5406507610017671,0.0
+16.05__plat_plus__cumulative,16.05,plat_plus,cumulative,2,"Aurelion Sol, Sion, Vex",0.5381933352277282,0.002457425774038957
+16.05__plat_plus__cumulative,16.05,plat_plus,cumulative,3,"Sion, Veigar, Xerath",0.5380463830190881,0.002604377982678985
+16.05__plat_plus__cumulative,16.05,plat_plus,cumulative,4,"Annie, Sion, Xerath",0.5379644541343801,0.0026863068673870227
+16.05__plat_plus__cumulative,16.05,plat_plus,cumulative,5,"Naafiri, Sion, Xerath",0.5378829098926223,0.002767851109144792
+16.05__plat_plus__cumulative,16.05,plat_plus,cumulative,6,"Pantheon, Sion, Xerath",0.5377452420356538,0.002905518966113352
+16.05__plat_plus__cumulative,16.05,plat_plus,cumulative,7,"Malzahar, Sion, Xerath",0.5374283778445414,0.0032223831572256723
+16.05__plat_plus__cumulative,16.05,plat_plus,cumulative,8,"Aurelion Sol, Sion, Xerath",0.5367995593108847,0.0038512016908823776
+16.05__plat_plus__cumulative,16.05,plat_plus,cumulative,9,"Anivia, Sion, Xerath",0.5366659635440121,0.0039847974577550405
+16.05__plat_plus__cumulative,16.05,plat_plus,cumulative,10,"Lux, Sion, Xerath",0.5366333722151989,0.00401738878656821
+16.06__plat_plus__cumulative,16.06,plat_plus,cumulative,1,"Sion, Swain, Xerath",0.5397329152746632,0.0
+16.06__plat_plus__cumulative,16.06,plat_plus,cumulative,2,"Sion, Vex, Xerath",0.5397254892279887,7.426046674474662e-06
+16.06__plat_plus__cumulative,16.06,plat_plus,cumulative,3,"Fizz, Sion, Swain",0.5391962979124771,0.0005366173621860204
+16.06__plat_plus__cumulative,16.06,plat_plus,cumulative,4,"Naafiri, Sion, Xerath",0.5390617369996067,0.0006711782750564721
+16.06__plat_plus__cumulative,16.06,plat_plus,cumulative,5,"Pantheon, Sion, Xerath",0.5389911213418823,0.0007417939327808432
+16.06__plat_plus__cumulative,16.06,plat_plus,cumulative,6,"Aurelion Sol, Sion, Vex",0.5388412859101002,0.0008916293645629958
+16.06__plat_plus__cumulative,16.06,plat_plus,cumulative,7,"Aurelion Sol, Naafiri, Sion",0.5387386513650682,0.0009942639095950057
+16.06__plat_plus__cumulative,16.06,plat_plus,cumulative,8,"Aurelion Sol, Fizz, Sion",0.5385713685366352,0.0011615467380279298
+16.06__plat_plus__cumulative,16.06,plat_plus,cumulative,9,"Annie, Sion, Xerath",0.5384578862330488,0.0012750290416143617
+16.06__plat_plus__cumulative,16.06,plat_plus,cumulative,10,"Naafiri, Pantheon, Sion",0.5383386558681174,0.0013942594065458058
+16.07__plat_plus__cumulative,16.07,plat_plus,cumulative,1,"Pantheon, Sion, Xerath",0.542309355221224,0.0
+16.07__plat_plus__cumulative,16.07,plat_plus,cumulative,2,"Aurelion Sol, Pantheon, Sion",0.541834174997799,0.0004751802234250757
+16.07__plat_plus__cumulative,16.07,plat_plus,cumulative,3,"Pantheon, Sion, Vel'Koz",0.541096150203366,0.0012132050178580434
+16.07__plat_plus__cumulative,16.07,plat_plus,cumulative,4,"Fizz, Pantheon, Sion",0.5410122560678999,0.0012970991533240994
+16.07__plat_plus__cumulative,16.07,plat_plus,cumulative,5,"Katarina, Pantheon, Sion",0.5405011915062167,0.0018081637150073604
+16.07__plat_plus__cumulative,16.07,plat_plus,cumulative,6,"Akshan, Pantheon, Sion",0.5403593900418794,0.0019499651793446482
+16.07__plat_plus__cumulative,16.07,plat_plus,cumulative,7,"Aurelion Sol, Sion, Vex",0.5399512924659039,0.002358062755320134
+16.07__plat_plus__cumulative,16.07,plat_plus,cumulative,8,"Akshan, Sion, Xerath",0.5396646762097249,0.002644679011499118
+16.07__plat_plus__cumulative,16.07,plat_plus,cumulative,9,"Sion, Vex, Xerath",0.5396386344008536,0.0026707208203704536
+16.07__plat_plus__cumulative,16.07,plat_plus,cumulative,10,"Naafiri, Pantheon, Sion",0.5396166063886879,0.002692748832536118
+16.07__emerald_plus__cumulative,16.07,emerald_plus,cumulative,1,"Ekko, Pantheon, Sion",0.5377919486984056,0.0
+16.07__emerald_plus__cumulative,16.07,emerald_plus,cumulative,2,"Fizz, Malzahar, Sion",0.5376247950759121,0.00016715362249353216
+16.07__emerald_plus__cumulative,16.07,emerald_plus,cumulative,3,"Fizz, Pantheon, Sion",0.5375903014442108,0.00020164725419480334
+16.07__emerald_plus__cumulative,16.07,emerald_plus,cumulative,4,"Katarina, Malzahar, Sion",0.5373686632133625,0.00042328548504311225
+16.07__emerald_plus__cumulative,16.07,emerald_plus,cumulative,5,"Fizz, Sion, Veigar",0.5372763372913997,0.0005156114070059559
+16.07__emerald_plus__cumulative,16.07,emerald_plus,cumulative,6,"Katarina, Pantheon, Sion",0.5372182636404255,0.0005736850579801667
+16.07__emerald_plus__cumulative,16.07,emerald_plus,cumulative,7,"Akshan, Aurelion Sol, Sion",0.5369315094409971,0.0008604392574085296
+16.07__emerald_plus__cumulative,16.07,emerald_plus,cumulative,8,"Aurelion Sol, Katarina, Sion",0.5367476355818156,0.0010443131165900343
+16.07__emerald_plus__cumulative,16.07,emerald_plus,cumulative,9,"Pantheon, Sion, Ziggs",0.5366740741340296,0.0011178745643760646
+16.07__emerald_plus__cumulative,16.07,emerald_plus,cumulative,10,"Akshan, Sion, Veigar",0.5365354519042094,0.0012564967941962601
+16.10__plat_plus__cumulative,16.10,plat_plus,cumulative,1,"Naafiri, Sion, Xerath",0.5400182051430209,0.0
+16.10__plat_plus__cumulative,16.10,plat_plus,cumulative,2,"Sion, Vex, Xerath",0.5388424729982769,0.0011757321447439795
+16.10__plat_plus__cumulative,16.10,plat_plus,cumulative,3,"Malphite, Sion, Xerath",0.5382460115156861,0.0017721936273348282
+16.10__plat_plus__cumulative,16.10,plat_plus,cumulative,4,"Pantheon, Sion, Xerath",0.5379083297419986,0.0021098754010222542
+16.10__plat_plus__cumulative,16.10,plat_plus,cumulative,5,"Malzahar, Sion, Xerath",0.5376626187484413,0.0023555863945795563
+16.10__plat_plus__cumulative,16.10,plat_plus,cumulative,6,"Fizz, Sion, Xerath",0.5374088827161166,0.002609322426904259
+16.10__plat_plus__cumulative,16.10,plat_plus,cumulative,7,"Fizz, Naafiri, Sion",0.5372068981181516,0.002811307024869314
+16.10__plat_plus__cumulative,16.10,plat_plus,cumulative,8,"Annie, Sion, Xerath",0.5371729683806189,0.0028452367624020036
+16.10__plat_plus__cumulative,16.10,plat_plus,cumulative,9,"Sion, Swain, Xerath",0.5369483132263683,0.003069891916652634
+16.10__plat_plus__cumulative,16.10,plat_plus,cumulative,10,"Fizz, Sion, Vex",0.5368727084467411,0.003145496696279837
+16.10__emerald_plus__cumulative,16.10,emerald_plus,cumulative,1,"Katarina, Pantheon, Sion",0.5347113129598452,0.0
+16.10__emerald_plus__cumulative,16.10,emerald_plus,cumulative,2,"Pantheon, Sion, Xerath",0.5344940412228042,0.00021727173704100267
+16.10__emerald_plus__cumulative,16.10,emerald_plus,cumulative,3,"Fizz, Pantheon, Sion",0.5341928823684104,0.0005184305914347487
+16.10__emerald_plus__cumulative,16.10,emerald_plus,cumulative,4,"Sion, Vex, Xerath",0.5341746094382982,0.0005367035215469995
+16.10__emerald_plus__cumulative,16.10,emerald_plus,cumulative,5,"Annie, Sion, Xerath",0.534172029819326,0.0005392831405192089
+16.10__emerald_plus__cumulative,16.10,emerald_plus,cumulative,6,"Fizz, Sion, Vex",0.5341469824806192,0.000564330479225994
+16.10__emerald_plus__cumulative,16.10,emerald_plus,cumulative,7,"Naafiri, Sion, Xerath",0.533876447506849,0.0008348654529961586
+16.10__emerald_plus__cumulative,16.10,emerald_plus,cumulative,8,"Katarina, Sion, Xerath",0.5338664941602526,0.0008448187995926393
+16.10__emerald_plus__cumulative,16.10,emerald_plus,cumulative,9,"Fizz, Sion, Swain",0.5336898453375434,0.0010214676223018193
+16.10__emerald_plus__cumulative,16.10,emerald_plus,cumulative,10,"Sion, Twisted Fate, Xerath",0.5333957518389469,0.0013155611208982565
+16.10__diamond_plus__cumulative,16.10,diamond_plus,cumulative,1,"Fizz, Pantheon, Veigar",0.5353004895046083,0.0
+16.10__diamond_plus__cumulative,16.10,diamond_plus,cumulative,2,"Aurelion Sol, Fizz, Pantheon",0.5351428810426132,0.0001576084619950846
+16.10__diamond_plus__cumulative,16.10,diamond_plus,cumulative,3,"Katarina, Pantheon, Veigar",0.5350907430532766,0.00020974645133164938
+16.10__diamond_plus__cumulative,16.10,diamond_plus,cumulative,4,"Brand, Fizz, Pantheon",0.5348716708536645,0.00042881865094379634
+16.10__diamond_plus__cumulative,16.10,diamond_plus,cumulative,5,"Fizz, Pantheon, Twisted Fate",0.5344561560082148,0.0008443334963934568
+16.10__diamond_plus__cumulative,16.10,diamond_plus,cumulative,6,"Katarina, Pantheon, Xerath",0.5344165087017358,0.0008839808028724416
+16.10__diamond_plus__cumulative,16.10,diamond_plus,cumulative,7,"Katarina, Pantheon, Twisted Fate",0.5343405863477587,0.0009599031568495731
+16.10__diamond_plus__cumulative,16.10,diamond_plus,cumulative,8,"Cassiopeia, Fizz, Pantheon",0.5342216222803693,0.0010788672242389996
+16.10__diamond_plus__cumulative,16.10,diamond_plus,cumulative,9,"Katarina, Pantheon, Zoe",0.5342162923809334,0.0010841971236749126
+16.10__diamond_plus__cumulative,16.10,diamond_plus,cumulative,10,"Fizz, Katarina, Taliyah",0.5341600788375622,0.0011404106670460656
+16.10__master_plus__cumulative,16.10,master_plus,cumulative,1,"Fizz, Pantheon, Twisted Fate",0.5366968298643056,0.0
+16.10__master_plus__cumulative,16.10,master_plus,cumulative,2,"Ahri, Fizz, Pantheon",0.5354937667606646,0.0012030631036409334
+16.10__master_plus__cumulative,16.10,master_plus,cumulative,3,"Ahri, Fizz, Katarina",0.5351449400130455,0.001551889851260091
+16.10__master_plus__cumulative,16.10,master_plus,cumulative,4,"Fizz, Twisted Fate, Vex",0.5350998475181508,0.001596982346154796
+16.10__master_plus__cumulative,16.10,master_plus,cumulative,5,"Fizz, Katarina, Twisted Fate",0.5349261303881693,0.0017706994761362838
+16.10__master_plus__cumulative,16.10,master_plus,cumulative,6,"Katarina, Twisted Fate, Vex",0.5348417177300013,0.0018551121343042265
+16.10__master_plus__cumulative,16.10,master_plus,cumulative,7,"Fizz, Katarina, Pantheon",0.5348154090721101,0.001881420792195443
+16.10__master_plus__cumulative,16.10,master_plus,cumulative,8,"Katarina, Twisted Fate, Zoe",0.5348086228810832,0.0018882069832223403
+16.10__master_plus__cumulative,16.10,master_plus,cumulative,9,"Annie, Katarina, Twisted Fate",0.5346056680540687,0.00209116181023683
+16.10__master_plus__cumulative,16.10,master_plus,cumulative,10,"Fizz, Katarina, Vladimir",0.534212188776734,0.0024846410875715152
+16.11__plat_plus__cumulative,16.11,plat_plus,cumulative,1,"Fizz, Sion, Vex",0.5379181491294469,0.0
+16.11__plat_plus__cumulative,16.11,plat_plus,cumulative,2,"Naafiri, Sion, Vex",0.5377342021119043,0.00018394701754265164
+16.11__plat_plus__cumulative,16.11,plat_plus,cumulative,3,"Naafiri, Sion, Vladimir",0.5376964644704921,0.0002216846589547794
+16.11__plat_plus__cumulative,16.11,plat_plus,cumulative,4,"Fizz, Naafiri, Sion",0.5374767416693836,0.00044140746006327003
+16.11__plat_plus__cumulative,16.11,plat_plus,cumulative,5,"Malphite, Naafiri, Sion",0.5371796376445075,0.0007385114849394192
+16.11__plat_plus__cumulative,16.11,plat_plus,cumulative,6,"Sion, Vex, Xerath",0.5368286263537589,0.0010895227756879677
+16.11__plat_plus__cumulative,16.11,plat_plus,cumulative,7,"Naafiri, Sion, Xerath",0.5364619996826041,0.0014561494468428027
+16.11__plat_plus__cumulative,16.11,plat_plus,cumulative,8,"Fizz, Malzahar, Sion",0.5363179565619569,0.0016001925674899997
+16.11__plat_plus__cumulative,16.11,plat_plus,cumulative,9,"Fizz, Pantheon, Sion",0.5362151060604868,0.001703043068960075
+16.11__plat_plus__cumulative,16.11,plat_plus,cumulative,10,"Annie, Naafiri, Sion",0.5361513870664742,0.00176676206297266
+16.11__emerald_plus__cumulative,16.11,emerald_plus,cumulative,1,"Fizz, Sion, Vex",0.535091393892025,0.0
+16.11__emerald_plus__cumulative,16.11,emerald_plus,cumulative,2,"Naafiri, Sion, Vex",0.5350726849175211,1.87089745038449e-05
+16.11__emerald_plus__cumulative,16.11,emerald_plus,cumulative,3,"Naafiri, Sion, Vladimir",0.534819208970457,0.00027218492156799723
+16.11__emerald_plus__cumulative,16.11,emerald_plus,cumulative,4,"Fizz, Naafiri, Sion",0.5347525806479239,0.00033881324410112157
+16.11__emerald_plus__cumulative,16.11,emerald_plus,cumulative,5,"Naafiri, Pantheon, Sion",0.5344444164204446,0.0006469774715803789
+16.11__emerald_plus__cumulative,16.11,emerald_plus,cumulative,6,"Lissandra, Naafiri, Sion",0.534061067702067,0.0010303261899580196
+16.11__emerald_plus__cumulative,16.11,emerald_plus,cumulative,7,"Malphite, Naafiri, Sion",0.5339927681970559,0.001098625694969102
+16.11__emerald_plus__cumulative,16.11,emerald_plus,cumulative,8,"Naafiri, Sion, Xerath",0.533522550087657,0.0015688438043679476
+16.11__emerald_plus__cumulative,16.11,emerald_plus,cumulative,9,"Katarina, Naafiri, Sion",0.5335081387760237,0.0015832551160013253
+16.11__emerald_plus__cumulative,16.11,emerald_plus,cumulative,10,"Fizz, Sion, Vladimir",0.5334753316943891,0.0016160621976358813
+16.11__diamond_plus__cumulative,16.11,diamond_plus,cumulative,1,"Diana, Pantheon, Talon",0.5337448475897483,0.0
+16.11__diamond_plus__cumulative,16.11,diamond_plus,cumulative,2,"Diana, Naafiri, Pantheon",0.5332531006614982,0.0004917469282500475
+16.11__diamond_plus__cumulative,16.11,diamond_plus,cumulative,3,"Diana, Pantheon, Vladimir",0.5329644689264993,0.0007803786632489818
+16.11__diamond_plus__cumulative,16.11,diamond_plus,cumulative,4,"Diana, Katarina, Pantheon",0.5329639027019967,0.0007809448877516001
+16.11__diamond_plus__cumulative,16.11,diamond_plus,cumulative,5,"Diana, Pantheon, Vel'Koz",0.5323486117173594,0.0013962358723889068
+16.11__diamond_plus__cumulative,16.11,diamond_plus,cumulative,6,"Pantheon, Talon, Vladimir",0.5320917382030665,0.0016531093866817281
+16.11__diamond_plus__cumulative,16.11,diamond_plus,cumulative,7,"Diana, Pantheon, Swain",0.5319454080972794,0.0017994394924688573
+16.11__diamond_plus__cumulative,16.11,diamond_plus,cumulative,8,"Diana, Galio, Pantheon",0.5317212424439587,0.0020236051457895865
+16.11__diamond_plus__cumulative,16.11,diamond_plus,cumulative,9,"Naafiri, Pantheon, Vladimir",0.5316786594826275,0.002066188107120781
+16.11__diamond_plus__cumulative,16.11,diamond_plus,cumulative,10,"Naafiri, Pantheon, Talon",0.5316585770228601,0.0020862705668881487
+16.11__master_plus__cumulative,16.11,master_plus,cumulative,1,"Katarina, Talon, Vex",0.5360098000582706,0.0
+16.11__master_plus__cumulative,16.11,master_plus,cumulative,2,"Galio, Katarina, Talon",0.5355634437327063,0.00044635632556433436
+16.11__master_plus__cumulative,16.11,master_plus,cumulative,3,"Talon, Vel'Koz, Vex",0.5354723764328421,0.0005374236254285236
+16.11__master_plus__cumulative,16.11,master_plus,cumulative,4,"Talon, Vex, Zoe",0.5347215316957624,0.0012882683625081714
+16.11__master_plus__cumulative,16.11,master_plus,cumulative,5,"Katarina, Vex, Zoe",0.534583834542852,0.0014259655154186257
+16.11__master_plus__cumulative,16.11,master_plus,cumulative,6,"Katarina, Talon, Vladimir",0.5345623184055348,0.0014474816527357826
+16.11__master_plus__cumulative,16.11,master_plus,cumulative,7,"Diana, Katarina, Talon",0.534549096803317,0.0014607032549536214
+16.11__master_plus__cumulative,16.11,master_plus,cumulative,8,"Diana, Talon, Vex",0.5342258343123756,0.0017839657458950109
+16.11__master_plus__cumulative,16.11,master_plus,cumulative,9,"Katarina, Talon, Zoe",0.5342019339904476,0.0018078660678230163
+16.11__master_plus__cumulative,16.11,master_plus,cumulative,10,"Aurelion Sol, Talon, Vex",0.5341390767644576,0.0018707232938129925

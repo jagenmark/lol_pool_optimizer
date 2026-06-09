@@ -1,0 +1,54 @@
+record_type,champion,pool,base_best_pool,base_best_score,winner_inclusion_rate,top_pool_slot_share,base_best_mean_rank,base_best_p95_rank,base_best_mean_score,sample_count,effective_sample_size
+champion,Ahri,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Akali,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Akshan,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.155,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Anivia,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.1,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Annie,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.045,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Aurelion Sol,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.215,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Aurora,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Azir,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Brand,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.015,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Cassiopeia,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Cho'Gath,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Diana,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.05,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Ekko,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Fizz,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.08,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Galio,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Hwei,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.05,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Irelia,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Jayce,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Kassadin,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Katarina,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.08,1.0,1.0,0.5422440795172393,10,5000.0
+champion,LeBlanc,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Lissandra,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Lux,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Malphite,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Malzahar,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.025,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Mel,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Morgana,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Naafiri,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.05,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Nasus,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.03,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Orianna,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Pantheon,,"Pantheon, Sion, Xerath",0.5423093552212241,1.0,0.655,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Qiyana,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Ryze,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Sion,,"Pantheon, Sion, Xerath",0.5423093552212241,1.0,1.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Smolder,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Swain,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.05,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Sylas,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Syndra,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Taliyah,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Talon,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Twisted Fate,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Veigar,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.025,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Vel'Koz,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.05,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Vex,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.1,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Viktor,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Vladimir,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Xerath,,"Pantheon, Sion, Xerath",0.5423093552212241,1.0,0.225,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Yasuo,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Yone,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Zed,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Ziggs,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+champion,Zoe,,"Pantheon, Sion, Xerath",0.5423093552212241,0.0,0.0,1.0,1.0,0.5422440795172393,10,5000.0
+winning_pool,,"Pantheon, Sion, Xerath","Pantheon, Sion, Xerath",0.5423093552212241,1.0,,1.0,1.0,0.5422440795172393,10,5000.0

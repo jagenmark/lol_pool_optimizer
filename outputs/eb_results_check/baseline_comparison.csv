@@ -1,0 +1,13 @@
+patch,pool_size,method,selected_pool,score
+16.07,1,optimized_pool_score,Viktor,0.5071186281517588
+16.07,1,baseline_highest_winrate,Viktor,0.5071186281517588
+16.07,1,baseline_highest_blindscore,Viktor,0.5071186281517588
+16.07,1,baseline_highest_pickrate,Ahri,0.506402007008581
+16.07,2,optimized_pool_score,"Ahri, Viktor",0.5151031203369403
+16.07,2,baseline_highest_winrate,"Viktor, Ahri",0.5151031203369403
+16.07,2,baseline_highest_blindscore,"Viktor, Ahri",0.5151031203369403
+16.07,2,baseline_highest_pickrate,"Ahri, Viktor",0.5151031203369403
+16.07,3,optimized_pool_score,"Ahri, Syndra, Viktor",0.5162292242845146
+16.07,3,baseline_highest_winrate,"Viktor, Ahri, Syndra",0.5162292242845146
+16.07,3,baseline_highest_blindscore,"Viktor, Ahri, Syndra",0.5162292242845146
+16.07,3,baseline_highest_pickrate,"Ahri, Viktor, Syndra",0.5162292242845146
