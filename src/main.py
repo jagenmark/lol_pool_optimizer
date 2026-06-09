@@ -22,6 +22,7 @@ from utils import (
     describe_frequency_status,
     parse_candidates_from_args,
     resolve_data_dir,
+    resolve_extra_data_dir,
 )
 
 
@@ -521,13 +522,10 @@ def main() -> None:
         diagnostic_output_dir = Path(
             args.selection_bias_output_dir or args.output_dir
         )
-        if args.selection_bias_extra_data_dir:
-            extra_data_dir = Path(args.selection_bias_extra_data_dir)
-        else:
-            auto_extra_data_dir = data_dir.resolve().parent.parent / "data"
-            extra_data_dir = (
-                auto_extra_data_dir if auto_extra_data_dir.exists() else None
-            )
+        extra_data_dir = resolve_extra_data_dir(
+            data_dir,
+            args.selection_bias_extra_data_dir,
+        )
         selection_bias_artifacts = run_selection_bias_diagnostics(
             loaded=loaded,
             data_dir=data_dir,
@@ -547,13 +545,10 @@ def main() -> None:
             args.method_sweep_output_dir
             or output_dir / f"method_sweep_{loaded.patch_label.replace('.', '_')}"
         )
-        if args.method_sweep_extra_data_dir:
-            method_sweep_extra_data_dir = Path(args.method_sweep_extra_data_dir)
-        else:
-            auto_extra_data_dir = data_dir.resolve().parent.parent / "data"
-            method_sweep_extra_data_dir = (
-                auto_extra_data_dir if auto_extra_data_dir.exists() else None
-            )
+        method_sweep_extra_data_dir = resolve_extra_data_dir(
+            data_dir,
+            args.method_sweep_extra_data_dir,
+        )
         method_sweep_artifacts = run_method_sweep(
             loaded=loaded,
             data_dir=data_dir,

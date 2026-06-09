@@ -10,6 +10,21 @@ def resolve_data_dir(current_file: str) -> Path:
     return Path(current_file).resolve().parent.parent / "data"
 
 
+def resolve_extra_data_dir(
+    data_dir: Path,
+    configured_path: str | Path | None = None,
+) -> Path | None:
+    if configured_path:
+        return Path(configured_path)
+
+    resolved_data_dir = data_dir.resolve()
+    candidates = (
+        resolved_data_dir / "external",
+        resolved_data_dir.parent.parent / "data",
+    )
+    return next((path for path in candidates if path.exists()), None)
+
+
 def describe_frequency_status(status: str) -> str:
     descriptions = {
         "present_in_prepared_enemy_frequency_file": "loaded directly from the prepared enemy frequency file",

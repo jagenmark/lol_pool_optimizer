@@ -22,9 +22,44 @@ data/
 |-- 16.06/
 |   |-- opgg_mid_matchups_clean.csv
 |   `-- enemy_freq_df.csv
-`-- 16.07/
+|-- 16.07/
     |-- opgg_mid_matchups_clean.csv
     `-- enemy_freq_df.csv
+`-- external/
+    |-- opgg_mid_matchups__plat_plus__16.11.csv
+    |-- lolalytics_mid_pickrate_mainrate_16.7_plat_plus_full.csv
+    `-- raw/
+```
+
+`data/external/` is included in the repository so selection-bias, method-sweep,
+and scope-stability analyses work after a normal clone.
+
+## Refreshing Source Data
+
+Install the extractor dependencies from the same project requirements:
+
+```powershell
+python -m pip install -r requirements.txt
+python -m playwright install chromium
+```
+
+The packaged utilities write to `data/external/` by default:
+
+```powershell
+python scripts/extractors/opgg_mid_extractor.py
+python scripts/extractors/opgg_mid_validation_extractor.py
+python scripts/extractors/inspect_lolalytics_mid_single.py
+python scripts/extractors/lolalytics_mid_extractor.py
+```
+
+For historical LoLalytics validation extracts, provide the patch, tier, and
+output path explicitly:
+
+```powershell
+python scripts/extractors/lolalytics_mid_validation_extractor.py `
+  --patch 16.7 `
+  --tier platinum_plus `
+  --output data/external/lolalytics_mid_pickrate_mainrate_16.7_plat_plus_full.csv
 ```
 
 ## Main Entry Point
@@ -32,19 +67,19 @@ data/
 Run the single-patch optimizer with a patch label:
 
 ```powershell
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\src\main.py" --patch 16.05
+py src/main.py --patch 16.05
 ```
 
 Optional examples:
 
 ```powershell
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\src\main.py" --patch 16.06 --pool-size 2
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\src\main.py" --patch 16.07 --candidates ahri syndra orianna viktor
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\src\main.py" --patch 16.05 --top-k 10
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\src\main.py" --patch 16.05 --lowest-pickrate 1
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\src\main.py" --patch 16.07 --estimator raw
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\src\main.py" --patch 16.07 --estimator eb --eb-alpha 100
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\src\main.py" --patch 16.07 --estimator eb --eb-alpha 100 --eb-mu 0.5
+py src/main.py --patch 16.06 --pool-size 2
+py src/main.py --patch 16.07 --candidates ahri syndra orianna viktor
+py src/main.py --patch 16.05 --top-k 10
+py src/main.py --patch 16.05 --lowest-pickrate 1
+py src/main.py --patch 16.07 --estimator raw
+py src/main.py --patch 16.07 --estimator eb --eb-alpha 100
+py src/main.py --patch 16.07 --estimator eb --eb-alpha 100 --eb-mu 0.5
 python src/main.py --patch 16.07 --estimator eb --uncertainty
 python src/main.py --patch 16.07 --uncertainty --simulation-mode fixed-policy --posterior-samples 5000 --posterior-seed 42 --simulate-top-pools 100
 python src/main.py --patch 16.07 --compare-ranks --compare-top-n 10
@@ -160,8 +195,7 @@ python src/main.py --patch 16.07 --estimator eb --eb-alpha 100 `
   --pool-size 3 `
   --selection-bias-diagnostics `
   --selection-bias-top-pools 100 `
-  --selection-bias-output-dir outputs/selection_bias_16_07 `
-  --selection-bias-extra-data-dir ../data
+  --selection-bias-output-dir outputs/selection_bias_16_07
 ```
 
 The workflow writes:
@@ -178,9 +212,8 @@ The workflow writes:
 The diagnostics measure top-pool dependence, exact exclusion loss, importance
 relative to candidate pick-rate share, matchup enrichment, favorable opponent
 selection, contribution concentration, posterior matchup reliability, and
-patch/rank stability. When the workspace-level `data/` directory is available,
-the workflow also uses the dated LoLalytics breadth/depth extract and the OP.GG
-Emerald+ validation extract.
+patch/rank stability. The bundled `data/external/` directory supplies the dated
+LoLalytics breadth/depth extracts and OP.GG validation extracts automatically.
 
 `selection_advantage` compares the observed opponent distribution for a
 champion with the general enemy distribution over the same recorded matchup
@@ -201,8 +234,7 @@ Run the broader non-Riot-API robustness workflow:
 ```powershell
 python src/main.py --patch 16.07 --estimator eb --eb-alpha 100 `
   --method-sweep `
-  --method-sweep-output-dir outputs/method_sweep_16_07 `
-  --method-sweep-extra-data-dir ../data
+  --method-sweep-output-dir outputs/method_sweep_16_07
 ```
 
 The sweep uses only prepared OP.GG aggregates and existing local LoLalytics
@@ -327,8 +359,8 @@ static site bundle.
 
 ## Future Cross-Patch Work
 
-The earlier experiment-oriented entrypoint has been preserved in:
-- [cross_patch_experiment.py](C:\Users\gosee\Documents\codex\lol_pool_optimizer\src\cross_patch_experiment.py)
+The earlier experiment-oriented entrypoint has been preserved in
+`src/cross_patch_experiment.py`.
 
 That keeps the project easy to extend later without mixing the single-patch CLI and cross-patch experimentation concerns.
 
@@ -337,25 +369,25 @@ That keeps the project easy to extend later without mixing the single-patch CLI 
 Generate school-project result CSVs and plots with:
 
 ```powershell
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\scripts\generate_results.py" --patch 16.05 --patches 16.05 16.06 16.07 --pool-size 3 --max-pool-size 8
+py scripts/generate_results.py --patch 16.05 --patches 16.05 16.06 16.07 --pool-size 3 --max-pool-size 8
 ```
 
 Optional candidate filtering works the same way as the main optimizer:
 
 ```powershell
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\scripts\generate_results.py" --patch 16.05 --lowest-pickrate 1
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\scripts\generate_results.py" --patch 16.07 --estimator eb --eb-alpha 100
+py scripts/generate_results.py --patch 16.05 --lowest-pickrate 1
+py scripts/generate_results.py --patch 16.07 --estimator eb --eb-alpha 100
 ```
 
 Example output modes:
 
 ```powershell
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\scripts\generate_results.py" --patch 16.07 --max-pool-size 8 --output-dir results/unrestricted
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\scripts\generate_results.py" --patch 16.07 --max-pool-size 8 --lowest-pickrate 1.0 --output-dir results/min_pickrate_1
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\scripts\generate_results.py" --patch 16.07 --max-pool-size 8 --candidates-file candidates_mid.txt --output-dir results/custom_candidates
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\scripts\generate_results.py" --patch 16.07 --pool-size 3 --force-champion Ahri --lowest-pickrate 1 --output-dir results/forced_ahri
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\scripts\generate_results.py" --patches 16.05 16.06 16.07 --max-pool-size 8 --force-champion Ahri --lowest-pickrate 1 --output-dir results/patch_validation_forced_ahri
-py "C:\Users\gosee\Documents\codex\lol_pool_optimizer\scripts\generate_results.py" --patch 16.05 --pool-size 3 --force-champion-batch top_pickrate:10 --lowest-pickrate 1 --output-dir results/forced_batch_top10
+py scripts/generate_results.py --patch 16.07 --max-pool-size 8 --output-dir results/unrestricted
+py scripts/generate_results.py --patch 16.07 --max-pool-size 8 --lowest-pickrate 1.0 --output-dir results/min_pickrate_1
+py scripts/generate_results.py --patch 16.07 --max-pool-size 8 --candidates-file candidates_mid.txt --output-dir results/custom_candidates
+py scripts/generate_results.py --patch 16.07 --pool-size 3 --force-champion Ahri --lowest-pickrate 1 --output-dir results/forced_ahri
+py scripts/generate_results.py --patches 16.05 16.06 16.07 --max-pool-size 8 --force-champion Ahri --lowest-pickrate 1 --output-dir results/patch_validation_forced_ahri
+py scripts/generate_results.py --patch 16.05 --pool-size 3 --force-champion-batch top_pickrate:10 --lowest-pickrate 1 --output-dir results/forced_batch_top10
 ```
 
 The results script also accepts patch aliases like `26.7` when the local data folder is named `16.07`.

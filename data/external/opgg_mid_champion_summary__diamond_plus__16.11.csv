@@ -1,0 +1,56 @@
+champion_name,champion_name_normalized,lane,patch,elo,winrate,pickrate,banrate,total_games,source_url,extraction_date
+Ahri,ahri,mid,16.11,diamond_plus,50.84,10.59,4.34,82913,https://op.gg/lol/champions/ahri/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Katarina,katarina,mid,16.11,diamond_plus,51.23,7.26,13.05,57161,https://op.gg/lol/champions/katarina/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Viktor,viktor,mid,16.11,diamond_plus,49.7,10.72,10.77,82560,https://op.gg/lol/champions/viktor/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Fizz,fizz,mid,16.11,diamond_plus,51.45,4.71,4.99,36967,https://op.gg/lol/champions/fizz/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Twisted Fate,twistedfate,mid,16.11,diamond_plus,50.99,5.85,1.52,44712,https://op.gg/lol/champions/twistedfate/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Vladimir,vladimir,mid,16.11,diamond_plus,51.16,5.01,8.05,39657,https://op.gg/lol/champions/vladimir/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Xerath,xerath,mid,16.11,diamond_plus,50.83,5.55,6.43,43006,https://op.gg/lol/champions/xerath/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Diana,diana,mid,16.11,diamond_plus,51.22,4.02,6.13,31514,https://op.gg/lol/champions/diana/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Zed,zed,mid,16.11,diamond_plus,49.64,7.46,27.74,58371,https://op.gg/lol/champions/zed/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Riven,riven,mid,16.11,diamond_plus,53.31,1.4,3.84,11259,https://op.gg/lol/champions/riven/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Lux,lux,mid,16.11,diamond_plus,50.94,3.59,1.76,28460,https://op.gg/lol/champions/lux/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Akali,akali,mid,16.11,diamond_plus,49.6,5.82,19.09,45542,https://op.gg/lol/champions/akali/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Zoe,zoe,mid,16.11,diamond_plus,50.83,3.43,7.75,26557,https://op.gg/lol/champions/zoe/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Lissandra,lissandra,mid,16.11,diamond_plus,50.11,4.92,2.91,38503,https://op.gg/lol/champions/lissandra/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Sylas,sylas,mid,16.11,diamond_plus,48.96,6.82,12.04,52885,https://op.gg/lol/champions/sylas/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Galio,galio,mid,16.11,diamond_plus,49.92,4.81,1.79,37286,https://op.gg/lol/champions/galio/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Ekko,ekko,mid,16.11,diamond_plus,50.64,3.26,2.35,25757,https://op.gg/lol/champions/ekko/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Anivia,anivia,mid,16.11,diamond_plus,50.3,3.5,5.46,27347,https://op.gg/lol/champions/anivia/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Akshan,akshan,mid,16.11,diamond_plus,50.66,2.86,3.49,22564,https://op.gg/lol/champions/akshan/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Annie,annie,mid,16.11,diamond_plus,50.63,2.87,0.68,22371,https://op.gg/lol/champions/annie/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Kassadin,kassadin,mid,16.11,diamond_plus,50.28,3.25,3.96,25490,https://op.gg/lol/champions/kassadin/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Naafiri,naafiri,mid,16.11,diamond_plus,50.48,2.01,31.26,15788,https://op.gg/lol/champions/naafiri/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Yasuo,yasuo,mid,16.11,diamond_plus,48.54,6.35,16.41,50121,https://op.gg/lol/champions/yasuo/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Xin Zhao,xinzhao,mid,16.11,diamond_plus,51.51,1.49,6.98,11867,https://op.gg/lol/champions/xinzhao/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Gragas,gragas,mid,16.11,diamond_plus,53.49,0.57,0.66,4594,https://op.gg/lol/champions/gragas/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Malzahar,malzahar,mid,16.11,diamond_plus,49.01,5.26,6.84,41276,https://op.gg/lol/champions/malzahar/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+LeBlanc,leblanc,mid,16.11,diamond_plus,49.55,3.81,15.39,29662,https://op.gg/lol/champions/leblanc/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Qiyana,qiyana,mid,16.11,diamond_plus,50.29,2.72,3.2,21420,https://op.gg/lol/champions/qiyana/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Veigar,veigar,mid,16.11,diamond_plus,50.24,2.73,0.54,21712,https://op.gg/lol/champions/veigar/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Cassiopeia,cassiopeia,mid,16.11,diamond_plus,50.57,2.28,2.36,17464,https://op.gg/lol/champions/cassiopeia/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Syndra,syndra,mid,16.11,diamond_plus,49.28,4.25,2.5,33466,https://op.gg/lol/champions/syndra/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Vex,vex,mid,16.11,diamond_plus,50.63,2.16,2.42,17027,https://op.gg/lol/champions/vex/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Aurora,aurora,mid,16.11,diamond_plus,49.68,3.33,2.17,25735,https://op.gg/lol/champions/aurora/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Talon,talon,mid,16.11,diamond_plus,50.0,2.38,15.55,18263,https://op.gg/lol/champions/talon/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Hwei,hwei,mid,16.11,diamond_plus,49.3,3.83,1.55,29787,https://op.gg/lol/champions/hwei/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Yone,yone,mid,16.11,diamond_plus,48.26,5.26,4.64,40636,https://op.gg/lol/champions/yone/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Ryze,ryze,mid,16.11,diamond_plus,48.7,4.3,1.09,33316,https://op.gg/lol/champions/ryze/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Jayce,jayce,mid,16.11,diamond_plus,50.86,1.12,8.59,8593,https://op.gg/lol/champions/jayce/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Irelia,irelia,mid,16.11,diamond_plus,49.26,2.45,14.38,19260,https://op.gg/lol/champions/irelia/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Aurelion Sol,aurelionsol,mid,16.11,diamond_plus,49.91,1.81,0.64,14205,https://op.gg/lol/champions/aurelionsol/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Pantheon,pantheon,mid,16.11,diamond_plus,51.13,0.82,1.49,6500,https://op.gg/lol/champions/pantheon/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Vel'Koz,velkoz,mid,16.11,diamond_plus,49.95,1.49,1.15,11798,https://op.gg/lol/champions/velkoz/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Taliyah,taliyah,mid,16.11,diamond_plus,49.46,1.87,0.52,14710,https://op.gg/lol/champions/taliyah/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Orianna,orianna,mid,16.11,diamond_plus,47.72,4.18,1.32,32062,https://op.gg/lol/champions/orianna/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Gwen,gwen,mid,16.11,diamond_plus,51.27,0.56,2.26,4558,https://op.gg/lol/champions/gwen/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Sion,sion,mid,16.11,diamond_plus,50.02,0.98,1.28,7529,https://op.gg/lol/champions/sion/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Brand,brand,mid,16.11,diamond_plus,49.29,1.14,7.73,8890,https://op.gg/lol/champions/brand/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Swain,swain,mid,16.11,diamond_plus,50.13,0.8,1.12,6286,https://op.gg/lol/champions/swain/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Kayle,kayle,mid,16.11,diamond_plus,50.14,0.77,2.55,5996,https://op.gg/lol/champions/kayle/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Ziggs,ziggs,mid,16.11,diamond_plus,49.71,0.65,0.4,5151,https://op.gg/lol/champions/ziggs/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Cho'Gath,chogath,mid,16.11,diamond_plus,49.5,0.68,0.42,5308,https://op.gg/lol/champions/chogath/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Malphite,malphite,mid,16.11,diamond_plus,48.99,0.71,16.13,5598,https://op.gg/lol/champions/malphite/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Nunu & Willump,nunuandwillump,mid,16.11,diamond_plus,49.55,0.65,0.65,4646,https://op.gg/lol/champions/nunu/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Mel,mel,mid,16.11,diamond_plus,45.06,2.68,20.05,21057,https://op.gg/lol/champions/mel/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08
+Azir,azir,mid,16.11,diamond_plus,46.42,1.64,0.28,12725,https://op.gg/lol/champions/azir/build/mid?region=global&tier=diamond_plus&patch=16.11,2026-06-08

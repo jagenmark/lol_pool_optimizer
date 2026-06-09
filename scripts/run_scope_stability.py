@@ -25,7 +25,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--aggregate-data-dir",
-        default=str(PROJECT_ROOT.parent / "data"),
+        default=str(PROJECT_ROOT / "data" / "external"),
         help="Aggregate patch/rank file root.",
     )
     parser.add_argument(
